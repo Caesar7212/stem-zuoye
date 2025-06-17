@@ -1,0 +1,2004 @@
+2025-06-17 19:19:27,776 - INFO - APP_ID: 4cabacd2
+2025-06-17 19:19:27,776 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 19:19:27,776 - INFO - API_SECRET: OTZm...
+2025-06-17 19:19:27,776 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:19:27,790 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:19:28,169 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:19:28,181 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:19:28,181 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:19:28,181 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 19:19:28,181 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 19:19:28,182 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 19:19:28,182 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 19:19:28,182 - INFO -   APP_ID: 4cabacd2
+2025-06-17 19:19:28,182 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 19:19:28,182 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 19:19:28,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 19:19:28,187 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 19:19:30,209 - INFO - 192.168.114.233 - - [17/Jun/2025 19:19:30] "GET / HTTP/1.1" 200 -
+2025-06-17 19:19:45,028 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 19:19:45,028 - INFO - ¿Î³Ì±êÌâ: 'ÊýÑ§»ù´¡'
+2025-06-17 19:19:45,028 - INFO - ¿Î³ÌÃèÊö: '¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì...'
+2025-06-17 19:19:45,028 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½âÊýÑ§»ù±¾¸ÅÄî
+2. ÕÆÎÕ»ù´¡ÔËËã
+3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ...'
+2025-06-17 19:19:45,028 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 19:19:45,028 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ÊýÑ§»ù´¡"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½âÊýÑ§»ù±¾¸ÅÄî\n2. ÕÆÎÕ»ù´¡ÔËËã\n3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:19:45,033 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:19:45,337 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:19:45,337 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:19:45,337 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:19:45,337 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 19:19:45,337 - INFO - 192.168.114.233 - - [17/Jun/2025 19:19:45] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 19:19:52,505 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 19:19:52,505 - INFO - ¿Î³Ì±êÌâ: 'ÊýÑ§»ù´¡'
+2025-06-17 19:19:52,505 - INFO - ¿Î³ÌÃèÊö: '¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì...'
+2025-06-17 19:19:52,505 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½âÊýÑ§»ù±¾¸ÅÄî
+2. ÕÆÎÕ»ù´¡ÔËËã
+3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ...'
+2025-06-17 19:19:52,505 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 19:19:52,505 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ÊýÑ§»ù´¡"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½âÊýÑ§»ù±¾¸ÅÄî\n2. ÕÆÎÕ»ù´¡ÔËËã\n3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:19:52,507 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:19:52,747 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:19:52,748 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:19:52,748 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:19:52,748 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 19:19:52,748 - INFO - 192.168.114.233 - - [17/Jun/2025 19:19:52] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 19:23:53,603 - INFO - APP_ID: 4cabacd2
+2025-06-17 19:23:53,603 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 19:23:53,603 - INFO - API_SECRET: OTZm...
+2025-06-17 19:23:53,603 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:23:53,606 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:23:53,899 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:23:53,900 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:23:53,900 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:23:53,900 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 19:23:53,900 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 19:23:53,901 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 19:23:53,901 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 19:23:53,901 - INFO -   APP_ID: 4cabacd2
+2025-06-17 19:23:53,901 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 19:23:53,901 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 19:23:53,906 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 19:23:53,906 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 19:23:56,561 - INFO - 192.168.114.233 - - [17/Jun/2025 19:23:56] "GET / HTTP/1.1" 200 -
+2025-06-17 19:24:09,091 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 19:24:09,092 - INFO - ¿Î³Ì±êÌâ: 'ÊýÑ§»ù´¡'
+2025-06-17 19:24:09,092 - INFO - ¿Î³ÌÃèÊö: '¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì...'
+2025-06-17 19:24:09,092 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½âÊýÑ§»ù±¾¸ÅÄî
+2. ÕÆÎÕ»ù´¡ÔËËã
+3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ...'
+2025-06-17 19:24:09,092 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 19:24:09,092 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ÊýÑ§»ù´¡"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½âÊýÑ§»ù±¾¸ÅÄî\n2. ÕÆÎÕ»ù´¡ÔËËã\n3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:24:09,092 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:24:09,278 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:24:09,278 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:24:09,278 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:24:09,278 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 19:24:09,278 - INFO - 192.168.114.233 - - [17/Jun/2025 19:24:09] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 19:33:13,915 - INFO - APP_ID: 4cabacd2
+2025-06-17 19:33:13,915 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 19:33:13,915 - INFO - API_SECRET: OTZm...
+2025-06-17 19:33:13,915 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 11:33:13 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 19:33:13,926 - DEBUG - Ç©ÃûBase64: H6Un0VQ0DgQAumBMYZK6taRy2Hq9EhJGDebxYyp/CQ8=
+2025-06-17 19:33:13,926 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="H6Un0VQ0DgQAumBMYZK6taRy2Hq9EhJGDebxYyp/CQ8="
+2025-06-17 19:33:13,926 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iSDZVbjBWUTBEZ1FBdW1CTVlaSzZ0YVJ5MkhxOUVoSkdEZWJ4WXlwL0NROD0i
+2025-06-17 19:33:13,926 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:33:13,929 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:33:14,331 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:33:14,332 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:33:14,332 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:33:14,332 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 19:33:14,332 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 19:33:14,333 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 19:33:14,333 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 19:33:14,333 - INFO -   APP_ID: 4cabacd2
+2025-06-17 19:33:14,333 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 19:33:14,333 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 19:33:14,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 19:33:14,338 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 19:33:53,192 - INFO - 192.168.114.233 - - [17/Jun/2025 19:33:53] "GET / HTTP/1.1" 200 -
+2025-06-17 19:34:03,029 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 19:34:03,029 - INFO - ¿Î³Ì±êÌâ: 'ÊýÑ§»ù´¡'
+2025-06-17 19:34:03,029 - INFO - ¿Î³ÌÃèÊö: '¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì...'
+2025-06-17 19:34:03,029 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½âÊýÑ§»ù±¾¸ÅÄî
+2. ÕÆÎÕ»ù´¡ÔËËã
+3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ...'
+2025-06-17 19:34:03,029 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 19:34:03,029 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 11:34:03 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 19:34:03,029 - DEBUG - Ç©ÃûBase64: 0tit93OJqbOMT4dyFJibZnfTmAu4LLMhxzoJFTCBKsg=
+2025-06-17 19:34:03,029 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="0tit93OJqbOMT4dyFJibZnfTmAu4LLMhxzoJFTCBKsg="
+2025-06-17 19:34:03,029 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iMHRpdDkzT0pxYk9NVDRkeUZKaWJabmZUbUF1NExMTWh4em9KRlRDQktzZz0i
+2025-06-17 19:34:03,029 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ÊýÑ§»ù´¡"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹ØÓÚÊýÑ§»ù´¡¸ÅÄîµÄ¿Î³Ì"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½âÊýÑ§»ù±¾¸ÅÄî\n2. ÕÆÎÕ»ù´¡ÔËËã\n3. Ó¦ÓÃÊýÑ§ÖªÊ¶½â¾öÊµ¼ÊÎÊÌâ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:34:03,029 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:34:03,363 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:34:03,363 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:34:03,363 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:34:03,363 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 19:34:03,363 - INFO - 192.168.114.233 - - [17/Jun/2025 19:34:03] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 19:35:50,789 - INFO - APP_ID: 4cabacd2
+2025-06-17 19:35:50,789 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 19:35:50,789 - INFO - API_SECRET: OTZm...
+2025-06-17 19:35:50,789 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 11:35:50 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 19:35:50,789 - DEBUG - Ç©ÃûBase64: X7qM2cbU5anUVsUHD4VRUa/4SIzHk/fax0SZtyYzGng=
+2025-06-17 19:35:50,789 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="X7qM2cbU5anUVsUHD4VRUa/4SIzHk/fax0SZtyYzGng="
+2025-06-17 19:35:50,789 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iWDdxTTJjYlU1YW5VVnNVSEQ0VlJVYS80U0l6SGsvZmF4MFNadHlZekduZz0i
+2025-06-17 19:35:50,789 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:35:50,792 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:35:51,299 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:35:51,299 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:35:51,299 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:35:51,300 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 19:35:51,300 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 19:35:51,300 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 19:35:51,301 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 19:35:51,301 - INFO -   APP_ID: 4cabacd2
+2025-06-17 19:35:51,301 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 19:35:51,301 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 19:35:51,305 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 19:35:51,305 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 19:36:34,587 - INFO - APP_ID: 4cabacd2
+2025-06-17 19:36:34,587 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 19:36:34,587 - INFO - API_SECRET: OTZm...
+2025-06-17 19:36:34,587 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 11:36:34 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 19:36:34,587 - DEBUG - Ç©ÃûBase64: JyEjY+XE0ChPud0hbzCg4FHv8CpHvsM2ZvX6Iv6p2x0=
+2025-06-17 19:36:34,587 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="JyEjY+XE0ChPud0hbzCg4FHv8CpHvsM2ZvX6Iv6p2x0="
+2025-06-17 19:36:34,587 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iSnlFalkrWEUwQ2hQdWQwaGJ6Q2c0Rkh2OENwSHZzTTJadlg2SXY2cDJ4MD0i
+2025-06-17 19:36:34,587 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 19:36:34,590 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 19:36:34,967 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 19:36:34,967 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 19:36:34,967 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 19:36:34,967 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 19:36:34,967 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 19:36:34,969 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 19:36:34,969 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 19:36:34,969 - INFO -   APP_ID: 4cabacd2
+2025-06-17 19:36:34,969 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 19:36:34,969 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 19:36:34,973 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 19:36:34,973 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:19:56,797 - INFO - APP_ID: 4cabacd2
+2025-06-17 20:19:56,797 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 20:19:56,797 - INFO - API_SECRET: OTZm...
+2025-06-17 20:19:56,797 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 12:19:56 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 20:19:56,797 - DEBUG - Ç©ÃûBase64: YlgPQSAib/0+rkDchjdhD8HeWDIUGD/iCn+KPFq1+ys=
+2025-06-17 20:19:56,797 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="YlgPQSAib/0+rkDchjdhD8HeWDIUGD/iCn+KPFq1+ys="
+2025-06-17 20:19:56,797 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iWWxnUFFTQWliLzArcmtEY2hqZGhEOEhlV0RJVUdEL2lDbitLUEZxMSt5cz0i
+2025-06-17 20:19:56,797 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 20:19:56,800 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 20:19:57,489 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 20:19:57,489 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 20:19:57,490 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 20:19:57,490 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 20:19:57,490 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 20:19:57,491 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 20:19:57,491 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 20:19:57,491 - INFO -   APP_ID: 4cabacd2
+2025-06-17 20:19:57,491 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 20:19:57,491 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 20:19:57,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 20:19:57,495 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:20:08,140 - INFO - 192.168.114.233 - - [17/Jun/2025 20:20:08] "GET / HTTP/1.1" 200 -
+2025-06-17 20:20:08,373 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 20:20:08,373 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 20:20:08,373 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 20:20:08,373 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 20:20:08,373 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 20:20:08,373 - DEBUG - Ç©ÃûÔ­Ê¼×Ö·û´®: host: spark-api-open.xf-yun.com
+date: Tue, 17 Jun 2025 12:20:08 GMT
+POST /v2/chat/completions HTTP/1.1
+2025-06-17 20:20:08,373 - DEBUG - Ç©ÃûBase64: Jsu92kUQYoMS4nW5od9+mr3HH4k9Ey94SJKSaZDlhqM=
+2025-06-17 20:20:08,373 - DEBUG - AuthorizationÔ­Ê¼×Ö·û´®: api_key="7d2cd40dd21e530da80e9069c6e155b8", algorithm="hmac-sha256", headers="host date request-line", signature="Jsu92kUQYoMS4nW5od9+mr3HH4k9Ey94SJKSaZDlhqM="
+2025-06-17 20:20:08,373 - DEBUG - Authorization Base64: YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iSnN1OTJrVVFZb01TNG5XNW9kOSttcjNISDRrOUV5OTRTSktTYVpEbGhxTT0i
+2025-06-17 20:20:08,373 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ¹âºÏ×÷ÓÃ"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´Ó¦¹ý³ÌÒÔ¼°ÔÚÉúÌ¬ÏµÍ³ÖÐµÄÖØÒªÐÔ¡£"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí\n2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì\n3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬ÏµÍ³ÖÐµÄÖØÒªÐÔ\n4. ÄÜ¹»½âÊÍ¹âºÏ×÷ÓÃÓëºôÎü×÷ÓÃµÄ¹ØÏµ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 20:20:08,375 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 20:20:08,597 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 20:20:08,598 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 20:20:08,598 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 20:20:08,598 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 20:20:08,598 - INFO - 192.168.114.233 - - [17/Jun/2025 20:20:08] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 20:36:43,365 - INFO - APP_ID: 4cabacd2
+2025-06-17 20:36:43,365 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 20:36:43,365 - INFO - API_SECRET: OTZm...
+2025-06-17 20:36:43,365 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ÄãºÃ£¬Çë»Ø¸´'·þÎñÕý³£'"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.5,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 20:36:43,368 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 20:36:44,889 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 20:36:44,889 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 20:36:44,889 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 20:36:44,890 - ERROR - APIÆ¾¾ÝÑéÖ¤Ê§°Ü
+2025-06-17 20:36:44,890 - ERROR - ÐÇ»ðAPIÆ¾¾ÝÑéÖ¤Ê§°Ü£¬Çë¼ì²é»·¾³±äÁ¿ÅäÖÃ
+2025-06-17 20:36:44,891 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 20:36:44,891 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 20:36:44,891 - INFO -   APP_ID: 4cabacd2
+2025-06-17 20:36:44,891 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 20:36:44,891 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 20:36:44,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 20:36:44,896 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:37:02,085 - INFO - 192.168.114.233 - - [17/Jun/2025 20:37:02] "GET / HTTP/1.1" 200 -
+2025-06-17 20:37:06,884 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 20:37:06,885 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 20:37:06,885 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 20:37:06,885 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 20:37:06,885 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 20:37:06,885 - DEBUG - ·¢ËÍÇëÇóµ½ÐÇ»ðAPI: {
+  "model": "x1",
+  "user": "user_id",
+  "messages": [
+    {
+      "role": "system",
+      "content": "ÄãÊÇÒ»¸ö×¨ÒµµÄ½ÌÓý¸¨ÖúAI£¬ÉÃ³¤Éú³É¿Î³ÌË¼Î¬µ¼Í¼¡£Çë¸ù¾ÝÓÃ»§Ìá¹©µÄÐÅÏ¢Éú³É¿Î³ÌË¼Î¬µ¼Í¼µÄHTML´úÂë¡£Êä³ö¸ñÊ½ÒªÇó£º1. Ö»Êä³öHTML´úÂë£¬²»Òª°üº¬ÈÎºÎ½âÊÍ2. Ê¹ÓÃ<div class='mindmap'>×÷ÎªÈÝÆ÷3. Ê¹ÓÃ<h3>±íÊ¾Ö÷ÒªÖ÷Ìâ4. Ê¹ÓÃ<ul>ºÍ<li>±íÊ¾²ã¼¶½á¹¹5. ²»Òª°üº¬ÈÎºÎCSS»òJavaScript6. Ë¼Î¬µ¼Í¼Ó¦¸Ã°üº¬ÒÔÏÂ²¿·Ö:    - ¿Î³Ì½éÉÜ   - ½ÌÑ§Ä¿±ê   - ºËÐÄ¸ÅÄî   - ¹Ø¼üÖªÊ¶µã   - ½ÌÑ§·½·¨   - ÆÀ¹À·½Ê½"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³Ì±êÌâ: ¹âºÏ×÷ÓÃ"
+    },
+    {
+      "role": "user",
+      "content": "¿Î³ÌÃèÊö: ¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´Ó¦¹ý³ÌÒÔ¼°ÔÚÉúÌ¬ÏµÍ³ÖÐµÄÖØÒªÐÔ¡£"
+    },
+    {
+      "role": "user",
+      "content": "½ÌÑ§Ä¿±ê: 1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí\n2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì\n3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬ÏµÍ³ÖÐµÄÖØÒªÐÔ\n4. ÄÜ¹»½âÊÍ¹âºÏ×÷ÓÃÓëºôÎü×÷ÓÃµÄ¹ØÏµ"
+    },
+    {
+      "role": "user",
+      "content": "Ê¾Àý¸ñÊ½£º<div class='mindmap'><h3>Ö÷Ìâ1</h3><ul><li>×ÓÖ÷Ìâ1.1</li></ul></div>"
+    }
+  ],
+  "stream": false,
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "tools": [
+    {
+      "type": "web_search",
+      "web_search": {
+        "enable": false
+      }
+    }
+  ]
+}
+2025-06-17 20:37:06,886 - DEBUG - Starting new HTTPS connection (1): spark-api-open.xf-yun.com:443
+2025-06-17 20:37:07,255 - DEBUG - https://spark-api-open.xf-yun.com:443 "POST /v2/chat/completions HTTP/1.1" 401 102
+2025-06-17 20:37:07,257 - INFO - APIÏìÓ¦×´Ì¬Âë: 401
+2025-06-17 20:37:07,257 - ERROR - APIÇëÇóÊ§°Ü: 401 - {"message":"HMAC signature cannot be verified:enforced header 'date' not used for signature creation"}
+2025-06-17 20:37:07,257 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 20:37:07,257 - INFO - 192.168.114.233 - - [17/Jun/2025 20:37:07] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 20:51:37,632 - INFO - APP_ID: 4cabacd2
+2025-06-17 20:51:37,632 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 20:51:37,632 - INFO - API_SECRET: OTZm...
+2025-06-17 20:51:37,634 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 20:51:37,634 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 20:51:37,634 - INFO -   APP_ID: 4cabacd2
+2025-06-17 20:51:37,634 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 20:51:37,634 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 20:51:37,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 20:51:37,645 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:51:46,562 - INFO - 192.168.114.233 - - [17/Jun/2025 20:51:46] "GET / HTTP/1.1" 200 -
+2025-06-17 20:51:48,967 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 20:51:48,967 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 20:51:48,967 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 20:51:48,967 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 20:51:48,967 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 20:51:48,967 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iMmpvYlFrQ0FHamtnNXNhRGs5ZlNoK3hJSFlETlk0MlA3ZGZyMHl5L3JBRT0i&date=Tue%2C+17+Jun+2025+12%3A51%3A48+GMT&host=spark-api.xf-yun.com
+2025-06-17 20:51:49,654 - INFO - Websocket connected
+2025-06-17 20:51:49,654 - DEBUG - WebSocket connection opened
+2025-06-17 20:51:49,655 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "general", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 20:51:49,736 - ERROR - API request error: 10004, {'header': {'code': 10004, 'message': "'$.parameter.chat.domain' value is invalid , shoule be one of [x1]; ", 'sid': 'cht000e0e1d@hu1977df21de10478282', 'status': 2}}
+2025-06-17 20:51:49,736 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 20:51:49,736 - INFO - 192.168.114.233 - - [17/Jun/2025 20:51:49] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 20:51:49,950 - DEBUG - WebSocket connection closed
+2025-06-17 20:56:31,499 - INFO - APP_ID: 4cabacd2
+2025-06-17 20:56:31,499 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 20:56:31,499 - INFO - API_SECRET: OTZm...
+2025-06-17 20:56:31,501 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 20:56:31,501 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 20:56:31,501 - INFO -   APP_ID: 4cabacd2
+2025-06-17 20:56:31,501 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 20:56:31,501 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 20:56:31,511 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 20:56:31,511 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:57:39,785 - INFO - APP_ID: 4cabacd2
+2025-06-17 20:57:39,785 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 20:57:39,785 - INFO - API_SECRET: OTZm...
+2025-06-17 20:57:39,788 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 20:57:39,788 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 20:57:39,788 - INFO -   APP_ID: 4cabacd2
+2025-06-17 20:57:39,788 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 20:57:39,788 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 20:57:39,798 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 20:57:39,799 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 20:57:41,484 - INFO - 192.168.114.233 - - [17/Jun/2025 20:57:41] "GET / HTTP/1.1" 200 -
+2025-06-17 20:57:45,573 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 20:57:45,573 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 20:57:45,573 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 20:57:45,573 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 20:57:45,573 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 20:57:45,574 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iczhyOXBPVHVnb3FndkdwQWZzRVEwWWJFcHdiRC8vNXZMQlJTa3g4YzhYQT0i&date=Tue%2C+17+Jun+2025+12%3A57%3A45+GMT&host=spark-api.xf-yun.com
+2025-06-17 20:57:45,952 - INFO - Websocket connected
+2025-06-17 20:57:45,952 - DEBUG - WebSocket connection opened
+2025-06-17 20:57:45,952 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "general", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 20:57:46,032 - ERROR - API request error: 10004, {'header': {'code': 10004, 'message': "'$.parameter.chat.domain' value is invalid , shoule be one of [x1]; ", 'sid': 'cht000dc292@dx1977df78da2b808292', 'status': 2}}
+2025-06-17 20:57:46,033 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 20:57:46,033 - INFO - 192.168.114.233 - - [17/Jun/2025 20:57:46] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 20:57:46,217 - DEBUG - WebSocket connection closed
+2025-06-17 21:02:10,996 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:02:10,996 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:02:10,996 - INFO - API_SECRET: OTZm...
+2025-06-17 21:02:10,998 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:02:10,998 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:02:10,998 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:02:10,998 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:02:10,998 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:02:11,009 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:02:11,009 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:02:15,368 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:02:15,368 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:02:15,368 - INFO - API_SECRET: OTZm...
+2025-06-17 21:02:15,370 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:02:15,370 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:02:15,370 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:02:15,370 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:02:15,370 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:02:15,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:02:15,378 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:02:17,418 - INFO - 192.168.114.233 - - [17/Jun/2025 21:02:17] "GET / HTTP/1.1" 200 -
+2025-06-17 21:02:19,353 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:02:19,353 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:02:19,353 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:02:19,354 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:02:19,354 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:02:19,354 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iL2VDZXc4NDEvOTd0OWl3TVdOZHZ4b3hOc0FZdXdHVVU2aURxRWlrRHdzOD0i&date=Tue%2C+17+Jun+2025+13%3A02%3A19+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:02:19,917 - INFO - Websocket connected
+2025-06-17 21:02:19,917 - DEBUG - WebSocket connection opened
+2025-06-17 21:02:19,917 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "general", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:02:19,992 - ERROR - API request error: 10004, {'header': {'code': 10004, 'message': "'$.parameter.chat.domain' value is invalid , shoule be one of [x1]; ", 'sid': 'cht000ec453@dx1977dfbbbbfb80a892', 'status': 2}}
+2025-06-17 21:02:19,992 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 21:02:19,992 - INFO - 192.168.114.233 - - [17/Jun/2025 21:02:19] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:02:20,193 - DEBUG - WebSocket connection closed
+2025-06-17 21:06:43,796 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:06:43,797 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:06:43,797 - INFO - API_SECRET: OTZm...
+2025-06-17 21:06:43,798 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:06:43,798 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:06:43,798 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:06:43,798 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:06:43,798 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:06:43,806 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:06:43,806 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:06:47,211 - INFO - 192.168.114.233 - - [17/Jun/2025 21:06:47] "GET / HTTP/1.1" 200 -
+2025-06-17 21:06:49,742 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:06:49,742 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:06:49,742 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:06:49,742 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:06:49,742 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:06:49,742 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0idTVISTU3TUhKVVk4V0ZQbk5kcGkzUTNxNG5ybldJY1MrQ0RWL2l4bzc2ND0i&date=Tue%2C+17+Jun+2025+13%3A06%3A49+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:06:50,162 - INFO - Websocket connected
+2025-06-17 21:06:50,162 - DEBUG - WebSocket connection opened
+2025-06-17 21:06:50,162 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:06:50,637 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:50,637 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 21:06:50,637 - INFO - 192.168.114.233 - - [17/Jun/2025 21:06:50] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:06:50,785 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:50,886 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:51,013 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:51,484 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:51,686 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:52,273 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:52,606 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:53,006 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:53,391 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:53,642 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:53,955 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:54,238 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:54,512 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:54,784 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:55,077 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:55,338 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:55,592 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:55,903 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:56,155 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:56,393 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:56,597 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:56,763 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:56,943 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:57,156 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:57,356 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:57,615 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:57,878 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:58,144 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:58,354 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:58,549 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:58,800 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,042 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,243 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,434 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,631 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,822 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:06:59,992 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:00,170 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:00,367 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:00,541 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:00,713 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:00,885 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,076 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,257 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,428 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,599 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,772 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:01,933 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:02,118 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:02,297 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:02,470 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:02,645 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:02,820 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,002 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,179 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,362 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,538 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,713 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:03,890 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,071 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,250 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,438 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,600 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,772 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:04,948 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:05,133 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:05,317 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:05,511 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:05,697 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:05,882 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:06,127 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:06,319 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:06,557 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:06,758 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:06,971 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:07,218 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:07,450 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:07,682 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:07,995 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:22,580 - ERROR - Error processing WebSocket message: 'content'
+2025-06-17 21:07:22,781 - DEBUG - WebSocket connection closed
+2025-06-17 21:09:02,100 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:09:02,101 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:09:02,101 - INFO - API_SECRET: OTZm...
+2025-06-17 21:09:02,102 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:09:02,102 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:09:02,102 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:09:02,102 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:09:02,102 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:09:02,113 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:09:02,113 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:09:05,386 - INFO - 192.168.114.233 - - [17/Jun/2025 21:09:05] "GET / HTTP/1.1" 200 -
+2025-06-17 21:09:07,351 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:09:07,351 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:09:07,352 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:09:07,352 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:09:07,352 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:09:07,352 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0idlVRanBTMUNGYUJQWGNBWEhGT0Vlc2F3YU5aNkpYSlpvWUpPV3ZxOTBVVT0i&date=Tue%2C+17+Jun+2025+13%3A09%3A07+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:09:07,979 - INFO - Websocket connected
+2025-06-17 21:09:07,980 - DEBUG - WebSocket connection opened
+2025-06-17 21:09:07,980 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:09:08,478 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,479 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,479 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 21:09:08,479 - INFO - 192.168.114.233 - - [17/Jun/2025 21:09:08] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:09:08,559 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,559 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,658 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,658 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,783 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,783 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,928 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:08,928 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:09,137 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:09,137 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:09,977 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:09,977 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:10,377 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:10,378 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:10,702 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:10,702 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,008 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,008 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,392 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,392 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,657 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,657 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,907 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:11,907 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,273 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,273 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,529 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,529 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,754 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,754 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,936 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:12,936 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,207 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,207 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,442 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,442 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,667 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,667 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,888 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:13,888 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,072 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,072 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,278 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,278 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,434 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,434 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,602 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,602 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,753 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,753 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,919 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:14,919 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,075 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,075 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,240 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,240 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,408 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,408 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,568 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,569 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,733 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,733 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,897 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:15,897 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,081 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,081 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,278 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,279 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,449 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,449 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,672 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,672 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,848 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:16,848 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,016 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,016 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,189 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,189 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,401 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,401 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,567 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,567 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,728 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,728 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,884 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:17,884 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,059 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,059 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,224 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,224 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,653 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,653 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,654 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,654 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,760 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,760 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,956 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:18,956 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,176 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,176 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,395 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,395 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,565 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,565 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,732 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,733 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,907 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:19,907 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,082 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,082 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,257 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,257 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,472 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,472 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,687 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,687 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,895 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:20,895 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,120 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,120 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,423 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,425 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,729 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:21,730 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,039 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,039 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,359 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,359 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,679 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:22,679 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:25,340 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:25,340 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:25,642 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:25,643 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,003 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,003 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,412 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,412 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,816 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:26,816 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,209 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,209 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,573 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,573 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,968 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:27,968 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,173 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,173 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,397 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,397 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,736 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,736 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,998 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:28,998 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,184 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,184 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,408 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,408 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,639 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,639 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,843 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:29,847 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,063 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,063 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,289 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,289 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,562 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,562 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,836 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:30,836 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,060 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,060 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,272 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,272 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,484 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,484 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,690 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,692 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,899 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:31,899 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,166 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,166 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,369 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,369 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,562 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,562 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,773 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,773 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,972 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:32,972 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,176 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,176 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,382 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,382 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,587 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,587 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,799 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,800 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,990 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:33,990 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,198 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,199 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,403 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,403 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,613 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,613 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,813 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:34,813 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,014 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,015 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,219 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,219 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,422 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,422 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,637 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,637 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,833 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:35,834 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,048 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,048 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,232 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,232 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,438 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,438 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,631 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,631 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,874 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:36,874 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,033 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,033 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,250 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,250 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,445 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,445 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,648 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,648 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,862 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:37,862 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,066 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,066 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,287 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,287 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,484 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,484 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,687 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,687 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,889 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:38,889 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,099 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,099 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,319 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,319 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,512 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,512 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,715 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,715 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,912 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:39,912 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,117 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,117 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,318 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,318 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,518 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,518 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,723 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,723 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,918 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:40,918 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,120 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,120 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,327 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,327 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,532 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,532 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,733 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,733 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,928 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:41,928 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,126 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,126 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,324 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,324 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,524 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,524 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,722 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,722 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,921 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:42,922 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,122 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,122 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,329 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,329 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,527 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,527 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,727 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,727 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,929 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:43,929 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,132 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,132 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,336 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,336 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,538 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,538 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,759 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,760 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,940 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:44,940 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,205 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,205 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,452 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,452 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,649 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,649 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,852 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:45,852 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,063 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,063 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,289 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,289 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,470 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,470 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,672 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,672 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,926 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:46,926 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,187 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,187 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,447 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,447 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,720 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:47,720 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,040 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,040 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,294 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,294 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,560 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,560 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,813 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:48,814 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,152 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,152 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,363 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,363 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,639 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,639 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,882 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:49,882 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,147 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,147 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,409 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,409 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,792 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,792 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,958 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:50,958 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,163 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,163 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,421 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,422 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,678 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,678 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,937 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:51,937 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,194 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,194 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,201 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,201 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,214 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,214 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,222 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,222 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,231 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,231 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,241 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,241 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,251 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,251 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,261 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,261 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,278 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,278 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,280 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,280 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,292 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,292 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,302 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,302 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,807 - ERROR - error from callback <function SparkWebSocket.call_spark_api.<locals>.<lambda> at 0x000001D2FEED9120>: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,807 - ERROR - WebSocket error: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:09:52,809 - DEBUG - WebSocket connection closed
+2025-06-17 21:11:33,076 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:11:33,076 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:11:33,076 - INFO - API_SECRET: OTZm...
+2025-06-17 21:11:33,076 - INFO - Before defining SparkWebSocket class.
+2025-06-17 21:11:33,076 - INFO - After defining SparkWebSocket class.
+2025-06-17 21:11:33,076 - INFO - SparkWebSocket object has 'on_message' method.
+2025-06-17 21:11:33,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-17 21:11:33,092 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:11:33,092 - INFO -  * Restarting with stat
+2025-06-17 21:11:33,343 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:11:33,343 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:11:33,343 - INFO - API_SECRET: OTZm...
+2025-06-17 21:11:33,343 - INFO - Before defining SparkWebSocket class.
+2025-06-17 21:11:33,343 - INFO - After defining SparkWebSocket class.
+2025-06-17 21:11:33,343 - INFO - SparkWebSocket object has 'on_message' method.
+2025-06-17 21:11:33,353 - WARNING -  * Debugger is active!
+2025-06-17 21:11:33,355 - INFO -  * Debugger PIN: 519-342-258
+2025-06-17 21:11:40,930 - INFO - 127.0.0.1 - - [17/Jun/2025 21:11:40] "GET / HTTP/1.1" 200 -
+2025-06-17 21:11:44,108 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:11:44,108 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:11:44,108 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:11:44,108 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:11:44,108 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:11:44,108 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0idXNuYWFRM0N4MTFuSWdGUTJpTkVZSmRUYmgxaEdYd0hjVVdtWHR0ZVV5RT0i&date=Tue%2C+17+Jun+2025+13%3A11%3A44+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:11:44,778 - INFO - Websocket connected
+2025-06-17 21:11:44,778 - DEBUG - WebSocket connection opened
+2025-06-17 21:11:44,778 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "general", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:11:44,855 - ERROR - API request error: 10004, {'header': {'code': 10004, 'message': "'$.parameter.chat.domain' value is invalid , shoule be one of [x1]; ", 'sid': 'cht000ec722@dx1977e045a41b80a892', 'status': 2}}
+2025-06-17 21:11:44,855 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê§°Ü
+2025-06-17 21:11:44,855 - INFO - 127.0.0.1 - - [17/Jun/2025 21:11:44] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:11:45,057 - DEBUG - WebSocket connection closed
+2025-06-17 21:12:02,469 - INFO -  * Detected change in 'C:\\Users\\30536\\Desktop\\test1\\test1\\app.py', reloading
+2025-06-17 21:12:02,530 - INFO -  * Restarting with stat
+2025-06-17 21:12:02,773 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:12:02,773 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:12:02,773 - INFO - API_SECRET: OTZm...
+2025-06-17 21:12:02,775 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:12:02,775 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:12:02,775 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:12:02,775 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:12:02,775 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:14:25,654 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:14:25,655 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:14:25,655 - INFO - API_SECRET: OTZm...
+2025-06-17 21:14:25,656 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:14:25,656 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:14:25,656 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:14:25,656 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:14:25,656 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:14:25,664 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:14:25,664 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:14:28,793 - INFO - 192.168.114.233 - - [17/Jun/2025 21:14:28] "GET / HTTP/1.1" 200 -
+2025-06-17 21:14:33,130 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:14:33,130 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:14:33,130 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:14:33,130 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:14:33,130 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:14:33,130 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iSVRlRW1zVktLTnJPZkJvSGlad3JFRlVvM0JzUVUzM2dRckxuQk1xWWZLbz0i&date=Tue%2C+17+Jun+2025+13%3A14%3A33+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:14:33,131 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê±·¢ÉúÒì³£: 'SparkWebSocket' object has no attribute 'on_message'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 287, in generate_mindmap
+    mindmap = spark_ws.call_spark_api(mindmap_prompt)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 189, in call_spark_api
+    on_message=self.on_message,  # Ö±½ÓÒýÓÃÀà·½·¨
+               ^^^^^^^^^^^^^^^
+AttributeError: 'SparkWebSocket' object has no attribute 'on_message'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 287, in generate_mindmap
+    mindmap = spark_ws.call_spark_api(mindmap_prompt)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 189, in call_spark_api
+    on_message=self.on_message,  # Ö±½ÓÒýÓÃÀà·½·¨
+               ^^^^^^^^^^^^^^^
+AttributeError: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:14:33,132 - INFO - 192.168.114.233 - - [17/Jun/2025 21:14:33] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:14:34,785 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:14:34,785 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:14:34,785 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:14:34,785 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:14:34,785 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:14:34,785 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iTnFPSWZDZGxVK1RJTWxUemxnZ1ZmcmZEMGFuaXhhcE9vd2dPdDlyQmhmYz0i&date=Tue%2C+17+Jun+2025+13%3A14%3A34+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:14:34,785 - ERROR - Éú³ÉË¼Î¬µ¼Í¼Ê±·¢ÉúÒì³£: 'SparkWebSocket' object has no attribute 'on_message'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 287, in generate_mindmap
+    mindmap = spark_ws.call_spark_api(mindmap_prompt)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 189, in call_spark_api
+    on_message=self.on_message,  # Ö±½ÓÒýÓÃÀà·½·¨
+               ^^^^^^^^^^^^^^^
+AttributeError: 'SparkWebSocket' object has no attribute 'on_message'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 287, in generate_mindmap
+    mindmap = spark_ws.call_spark_api(mindmap_prompt)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 189, in call_spark_api
+    on_message=self.on_message,  # Ö±½ÓÒýÓÃÀà·½·¨
+               ^^^^^^^^^^^^^^^
+AttributeError: 'SparkWebSocket' object has no attribute 'on_message'
+2025-06-17 21:14:34,785 - INFO - 192.168.114.233 - - [17/Jun/2025 21:14:34] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:19:07,029 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:19:07,030 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:19:07,030 - INFO - API_SECRET: OTZm...
+2025-06-17 21:19:07,030 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:19:07,031 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:19:07,031 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:19:07,031 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:19:07,031 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:19:07,045 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:19:07,045 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:19:12,208 - INFO - 192.168.114.233 - - [17/Jun/2025 21:19:12] "GET / HTTP/1.1" 200 -
+2025-06-17 21:19:14,909 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:19:14,909 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:19:14,909 - INFO - ¿Î³ÌÃèÊö: '¹âºÏ×÷ÓÃÊÇÂÌÉ«Ö²ÎïÀûÓÃ¹âÄÜ½«¶þÑõ»¯Ì¼ºÍË®×ª»¯ÎªÓÐ»úÎïºÍÑõÆøµÄ¹ý³Ì¡£±¾¿Î³Ì½«½éÉÜ¹âºÏ×÷ÓÃµÄ»ù±¾Ô­Àí¡¢·´...'
+2025-06-17 21:19:14,909 - INFO - ½ÌÑ§Ä¿±ê: '1. Àí½â¹âºÏ×÷ÓÃµÄ»ù±¾¸ÅÄîºÍÔ­Àí
+2. ÕÆÎÕ¹âºÏ×÷ÓÃµÄ¹â·´Ó¦ºÍ°µ·´Ó¦¹ý³Ì
+3. ÁË½â¹âºÏ×÷ÓÃÔÚÉúÌ¬...'
+2025-06-17 21:19:14,909 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:19:14,909 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iZ1lIR0pmY1kzWC91TTBkem1aOElZb1V2ZUw4OGREYytqQ3ZQWjBqeWNpZz0i&date=Tue%2C+17+Jun+2025+13%3A19%3A14+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:19:15,702 - INFO - Websocket connected
+2025-06-17 21:19:15,702 - DEBUG - WebSocket connection opened
+2025-06-17 21:19:15,702 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u8bfe\u7a0b\u63cf\u8ff0: \u5149\u5408\u4f5c\u7528\u662f\u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\u3002\u672c\u8bfe\u7a0b\u5c06\u4ecb\u7ecd\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u4ee5\u53ca\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\u3002"}, {"role": "user", "content": "\u6559\u5b66\u76ee\u6807: 1. \u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406\n2. \u638c\u63e1\u5149\u5408\u4f5c\u7528\u7684\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b\n3. \u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027\n4. \u80fd\u591f\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:19:16,212 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:16,293 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:16,396 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:16,527 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:16,680 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:16,883 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:18,343 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:18,682 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:19,010 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:19,343 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:19,687 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:20,044 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:20,424 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:20,781 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:20,982 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:21,245 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:21,499 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:21,745 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:21,938 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:22,126 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:22,321 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:22,507 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:22,687 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:22,862 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,058 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,246 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,428 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,605 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,784 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:23,956 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:24,152 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:24,337 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:24,519 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:24,699 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:24,876 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:25,076 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:25,266 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:25,458 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:25,634 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:25,811 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,028 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,271 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,457 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,634 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,821 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:26,979 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:27,162 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:27,337 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:27,514 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:27,682 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:27,846 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,022 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,200 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,369 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,536 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,703 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:28,870 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,046 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,219 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,392 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,565 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,737 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:29,905 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,082 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,262 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,436 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,607 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,779 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:30,949 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,125 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,298 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,473 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,646 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,814 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:31,983 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:32,156 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:32,341 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:32,520 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:32,689 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:32,861 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,094 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,282 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,457 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,637 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,812 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:33,985 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:34,165 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:34,342 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:34,523 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:34,697 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:34,874 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,058 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,236 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,415 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,597 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,818 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:35,995 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:36,179 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:36,354 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:36,529 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:36,749 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:36,966 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:37,193 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:37,415 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:37,706 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:37,875 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,052 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,227 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,403 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,579 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,752 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:38,925 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,102 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,279 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,457 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,627 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,805 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:39,972 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:40,150 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:40,324 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:40,503 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:40,722 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:40,942 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:41,174 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:57,013 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:19:57,013 - DEBUG - API response completed
+2025-06-17 21:19:57,013 - INFO - ³É¹¦Éú³ÉË¼Î¬µ¼Í¼£¬³¤¶È: 924
+2025-06-17 21:19:57,013 - INFO - Ë¼Î¬µ¼Í¼¸ñÊ½ÑéÖ¤Í¨¹ý
+2025-06-17 21:19:57,013 - INFO - 192.168.114.233 - - [17/Jun/2025 21:19:57] "POST /generate_mindmap HTTP/1.1" 200 -
+2025-06-17 21:19:57,220 - DEBUG - WebSocket connection closed
+2025-06-17 21:20:05,250 - INFO - ÊÕµ½½ÌÑ§Á÷³ÌÉú³ÉÇëÇó
+2025-06-17 21:20:05,250 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:20:05,250 - INFO - Ë¼Î¬µ¼Í¼³¤¶È: 924
+2025-06-17 21:20:05,250 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³É½ÌÑ§Á÷³Ì...
+2025-06-17 21:20:05,250 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iSGlkak1Uc1NzeGEvRVRaWG1DRlc2Q1hmMjE2QWZscnowQ0RQRHkvWFRpQT0i&date=Tue%2C+17+Jun+2025+13%3A20%3A05+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:20:05,911 - INFO - Websocket connected
+2025-06-17 21:20:05,911 - DEBUG - WebSocket connection opened
+2025-06-17 21:20:05,911 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8bbe\u8ba1\u5e08\uff0c\u64c5\u957f\u6839\u636e\u601d\u7ef4\u5bfc\u56fe\u751f\u6210\u8be6\u7ec6\u7684\u6559\u5b66\u6d41\u7a0b\u3002\u8bf7\u6839\u636e\u63d0\u4f9b\u7684\u601d\u7ef4\u5bfc\u56fe\u751f\u6210\u6559\u5b66\u6d41\u7a0b\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='teaching-flow'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u6559\u5b66\u73af\u82824. \u4f7f\u7528<p class='time'>\u8868\u793a\u65f6\u95f4\u5206\u914d5. \u4f7f\u7528<ul>\u8868\u793a\u6559\u5b66\u6d3b\u52a86. \u4f7f\u7528<ol>\u8868\u793a\u6559\u5b66\u8d44\u6e90\u9700\u6c427. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript8. \u6559\u5b66\u6d41\u7a0b\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u73af\u8282:    - \u5bfc\u5165\u73af\u8282   - \u77e5\u8bc6\u8bb2\u89e3   - \u4e92\u52a8\u6d3b\u52a8   - \u7ec3\u4e60\u4e0e\u5b9e\u8df5   - \u603b\u7ed3\u4e0e\u8bc4\u4ef7"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u601d\u7ef4\u5bfc\u56fe\u5185\u5bb9\uff1a\n<div class='mindmap'>  \n  <h3>\u8bfe\u7a0b\u4ecb\u7ecd</h3>  \n  <ul>  \n    <li>\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528</li>  \n    <li>\u8bfe\u7a0b\u63cf\u8ff0: \u7eff\u8272\u690d\u7269\u5229\u7528\u5149\u80fd\u5c06\u4e8c\u6c27\u5316\u78b3\u548c\u6c34\u8f6c\u5316\u4e3a\u6709\u673a\u7269\u548c\u6c27\u6c14\u7684\u8fc7\u7a0b\uff0c\u6db5\u76d6\u57fa\u672c\u539f\u7406\u3001\u53cd\u5e94\u8fc7\u7a0b\u53ca\u751f\u6001\u91cd\u8981\u6027</li>  \n  </ul>  \n  <h3>\u6559\u5b66\u76ee\u6807</h3>  \n  <ul>  \n    <li>\u7406\u89e3\u5149\u5408\u4f5c\u7528\u7684\u57fa\u672c\u6982\u5ff5\u548c\u539f\u7406</li>  \n    <li>\u638c\u63e1\u5149\u53cd\u5e94\u548c\u6697\u53cd\u5e94\u8fc7\u7a0b</li>  \n    <li>\u4e86\u89e3\u5149\u5408\u4f5c\u7528\u5728\u751f\u6001\u7cfb\u7edf\u4e2d\u7684\u91cd\u8981\u6027</li>  \n    <li>\u89e3\u91ca\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u5173\u7cfb</li>  \n  </ul>  \n  <h3>\u6838\u5fc3\u6982\u5ff5</h3>  \n  <ul>  \n    <li>\u5149\u80fd\u8f6c\u5316\u673a\u5236</li>  \n    <li>\u53cd\u5e94\u9636\u6bb5\u5212\u5206\uff08\u5149\u53cd\u5e94/\u6697\u53cd\u5e94\uff09</li>  \n    <li>\u7269\u8d28\u4e0e\u80fd\u91cf\u53d8\u5316\u89c4\u5f8b</li>  \n    <li>\u751f\u6001\u94fe\u57fa\u7840\u4f5c\u7528</li>  \n  </ul>  \n  <h3>\u5173\u952e\u77e5\u8bc6\u70b9</h3>  \n  <ul>  \n    <li>\u5149\u53cd\u5e94\u573a\u6240\uff08\u7c7b\u56ca\u4f53\u819c\uff09</li>  \n    <li>ATP\u548cNADPH\u751f\u6210</li>  \n    <li>\u5361\u5c14\u6587\u5faa\u73af\uff08C3\u9014\u5f84\uff09</li>  \n    <li>\u53f6\u7eff\u4f53\u7ed3\u6784\u4e0e\u529f\u80fd</li>  \n    <li>\u73af\u5883\u56e0\u7d20\u5f71\u54cd\uff08\u5149\u7167/CO\u2082\u6d53\u5ea6\uff09</li>  \n    <li>\u80fd\u91cf\u8f6c\u5316\u6548\u7387</li>  \n  </ul>  \n  <h3>\u6559\u5b66\u65b9\u6cd5</h3>  \n  <ul>  \n    <li>\u7406\u8bba\u8bb2\u6388\u4e0e\u52a8\u753b\u6f14\u793a</li>  \n    <li>\u5b9e\u9a8c\u5ba4\u5149\u5408\u901f\u7387\u6d4b\u5b9a</li>  \n    <li>\u751f\u6001\u6848\u4f8b\u5206\u6790\u8ba8\u8bba</li>  \n    <li>\u5bf9\u6bd4\u547c\u5438\u4f5c\u7528\u5b9e\u9a8c</li>  \n  </ul>  \n  <h3>\u8bc4\u4f30\u65b9\u5f0f</h3>  \n  <ul>  \n    <li>\u77e5\u8bc6\u6d4b\u9a8c\uff08\u9009\u62e9\u9898/\u7b80\u7b54\u9898\uff09</li>  \n    <li>\u5b9e\u9a8c\u62a5\u544a\u64b0\u5199</li>  \n    <li>\u751f\u6001\u7cfb\u7edf\u6848\u4f8b\u5206\u6790\u4f5c\u4e1a</li>  \n    <li>\u8bfe\u5802\u4e92\u52a8\u8868\u73b0\u8bc4\u4f30</li>  \n  </ul>  \n</div>"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='teaching-flow'><h3>\u4e00\u3001\u5bfc\u5165\u73af\u8282</h3><p class='time'>\u65f6\u95f4\uff1a5\u5206\u949f</p><ul><li>\u6d3b\u52a81</li></ul><p>\u6240\u9700\u8d44\u6e90\uff1a</p><ol><li>\u8d44\u6e901</li></ol></div>"}]}}}
+2025-06-17 21:20:06,953 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:07,038 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:07,139 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:07,264 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:07,464 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:08,591 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:08,849 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:09,184 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:09,488 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:09,698 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:09,954 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:10,178 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:10,389 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:10,578 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:10,766 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:10,899 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:11,091 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:11,282 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:11,475 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:11,661 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:11,899 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:12,180 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:12,340 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:12,488 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:12,644 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:12,837 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:13,060 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:13,287 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:13,510 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:13,814 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:14,116 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:14,356 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:14,669 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:14,964 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:15,207 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:15,443 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:15,676 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:16,000 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:16,219 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:16,461 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:16,705 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:16,946 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:17,287 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:17,536 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:17,782 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:18,019 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:18,270 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:18,506 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:18,745 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:18,909 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:19,099 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:19,285 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:19,467 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:19,649 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:19,827 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:20,018 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:20,203 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:20,393 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:20,630 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:20,863 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:21,059 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:21,257 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:21,459 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:21,698 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:21,939 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:22,192 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:22,450 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:22,788 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:23,034 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:23,299 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:23,543 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:23,872 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:24,085 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:24,338 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:24,582 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:24,828 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:25,069 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:25,272 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:25,522 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:25,765 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:25,957 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:26,209 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:20:56,250 - DEBUG - API response completed
+2025-06-17 21:20:56,250 - INFO - ³É¹¦Éú³É½ÌÑ§Á÷³Ì£¬³¤¶È: 1528
+2025-06-17 21:20:56,251 - INFO - 192.168.114.233 - - [17/Jun/2025 21:20:56] "POST /generate_teaching_flow HTTP/1.1" 200 -
+2025-06-17 21:20:56,445 - DEBUG - WebSocket connection closed
+2025-06-17 21:21:07,294 - INFO - ÊÕµ½ÎÊÌâÄ£ÄâÉú³ÉÇëÇó
+2025-06-17 21:21:07,294 - INFO - ¿Î³Ì±êÌâ: '¹âºÏ×÷ÓÃ'
+2025-06-17 21:21:07,294 - INFO - ½ÌÑ§Á÷³Ì³¤¶È: 1528
+2025-06-17 21:21:07,294 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉÎÊÌâÄ£Äâ...
+2025-06-17 21:21:07,294 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0icjgvbWZrSlRCZXR0VzNCMFlKYW5paDA0RDVrNGkyRFY1a1JmczFZSHRXVT0i&date=Tue%2C+17+Jun+2025+13%3A21%3A07+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:21:07,794 - INFO - Websocket connected
+2025-06-17 21:21:07,794 - DEBUG - WebSocket connection opened
+2025-06-17 21:21:07,797 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u7ecf\u9a8c\u4e30\u5bcc\u7684\u6559\u80b2\u5206\u6790\u5e08\uff0c\u64c5\u957f\u6839\u636e\u6559\u5b66\u6d41\u7a0b\u8fdb\u884c\u95ee\u9898\u6a21\u62df\u4e0e\u9884\u671f\u6548\u679c\u5206\u6790\u3002\u8bf7\u6839\u636e\u63d0\u4f9b\u7684\u6559\u5b66\u6d41\u7a0b\u751f\u6210\u95ee\u9898\u6a21\u62df\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='problem-simulation'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h4>\u8868\u793a\u5404\u90e8\u5206\u6807\u98984. \u4f7f\u7528<ul>\u8868\u793a\u5217\u8868\u5185\u5bb95. \u4f7f\u7528<script id='chart-data'>\u5305\u542b\u96f7\u8fbe\u56fe\u6570\u636e6. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript\uff08\u9664\u4e86\u96f7\u8fbe\u56fe\u6570\u636e\uff097. \u5185\u5bb9\u5e94\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u53ef\u80fd\u51fa\u73b0\u7684\u95ee\u9898\u53ca\u89e3\u51b3\u65b9\u6848   - \u5b66\u751f\u53ef\u80fd\u63d0\u51fa\u7684\u7591\u95ee   - \u9884\u671f\u5b66\u4e60\u6548\u679c   - \u6559\u5b66\u96be\u70b9\u5206\u6790"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u5149\u5408\u4f5c\u7528"}, {"role": "user", "content": "\u6559\u5b66\u6d41\u7a0b\u5185\u5bb9\uff1a\n<div class='teaching-flow'>  \n  <h3>\u4e00\u3001\u5bfc\u5165\u73af\u8282</h3>  \n  <p class='time'>\u65f6\u95f4\uff1a5\u5206\u949f</p>  \n  <ul>  \n    <li>\u5c55\u793a\u7eff\u8272\u690d\u7269\u53f6\u7247\uff0c\u63d0\u95ee\uff1a\u201c\u690d\u7269\u5982\u4f55\u83b7\u53d6\u80fd\u91cf\uff1f\u201d</li>  \n    <li>\u64ad\u653e\u5149\u5408\u4f5c\u7528\u77ed\u89c6\u9891\u7247\u6bb5\uff08\u5982\u6811\u53f6\u5728\u9633\u5149\u4e0b\u7684\u6c14\u4f53\u4ea4\u6362\u73b0\u8c61\uff09</li>  \n  </ul>  \n  <p>\u6240\u9700\u8d44\u6e90\uff1a</p>  \n  <ol>  \n    <li>\u65b0\u9c9c\u690d\u7269\u53f6\u7247\u6837\u672c</li>  \n    <li>\u5149\u5408\u4f5c\u7528\u73b0\u8c61\u89c6\u9891</li>  \n  </ol>  \n\n  <h3>\u4e8c\u3001\u77e5\u8bc6\u8bb2\u89e3</h3>  \n  <p class='time'>\u65f6\u95f4\uff1a20\u5206\u949f</p>  \n  <ul>  \n    <li>\u8bb2\u89e3\u5149\u53cd\u5e94\u9636\u6bb5\uff08\u7c7b\u56ca\u4f53\u819c\u7ed3\u6784\u3001\u6c34\u7684\u5149\u89e3\u3001ATP/NADPH\u751f\u6210\uff09</li>  \n    <li>\u901a\u8fc7\u52a8\u753b\u6f14\u793a\u7535\u5b50\u4f20\u9012\u94fe\u548c\u80fd\u91cf\u8f6c\u5316\u8fc7\u7a0b</li>  \n    <li>\u8bb2\u89e3\u6697\u53cd\u5e94\u9636\u6bb5\uff08\u5361\u5c14\u6587\u5faa\u73af\u6b65\u9aa4\u3001C3\u5316\u5408\u7269\u8fd8\u539f\uff09</li>  \n    <li>\u7ed3\u5408\u677f\u4e66\u5bf9\u6bd4\u5149\u53cd\u5e94\u4e0e\u6697\u53cd\u5e94\u7684\u533a\u522b</li>  \n  </ul>  \n  <p>\u6240\u9700\u8d44\u6e90\uff1a</p>  \n  <ol>  \n    <li>\u53f6\u7eff\u4f53\u7ed3\u6784\u793a\u610f\u56fe</li>  \n    <li>\u5149\u5408\u4f5c\u7528\u52a8\u6001\u52a8\u753b\uff08\u5149\u53cd\u5e94+\u6697\u53cd\u5e94\uff09</li>  \n    <li>\u677f\u4e66/\u591a\u5a92\u4f53\u6295\u5f71\u8bbe\u5907</li>  \n  </ol>  \n\n  <h3>\u4e09\u3001\u4e92\u52a8\u6d3b\u52a8</h3>  \n  <p class='time'>\u65f6\u95f4\uff1a15\u5206\u949f</p>  \n  <ul>  \n    <li>\u5206\u7ec4\u5b9e\u9a8c\uff1a\u5229\u7528\u771f\u7a7a\u6e17\u6c34\u6cd5\u89c2\u5bdf\u53f6\u7247\u7ec6\u80de\u6c14\u6ce1\u4ea7\u751f\uff08\u6a21\u62df\u5149\u53cd\u5e94\uff09</li>  \n    <li>\u8ba8\u8bba\u201c\u82e5\u7a81\u7136\u505c\u6b62\u5149\u7167\uff0cC3/C5\u542b\u91cf\u5982\u4f55\u53d8\u5316\uff1f\u201d</li>  \n    <li>\u89d2\u8272\u626e\u6f14\uff1a\u5b66\u751f\u5206\u522b\u626e\u6f14\u53f6\u7eff\u4f53\u3001\u5149\u80fd\u3001CO\u2082\u7b49\u89d2\u8272\uff0c\u6a21\u62df\u7269\u8d28\u4f20\u9012\u8fc7\u7a0b</li>  \n  </ul>  \n  <p>\u6240\u9700\u8d44\u6e90\uff1a</p>  \n  <ol>  \n    <li>\u5b9e\u9a8c\u5668\u6750\uff08\u70e7\u676f\u3001\u7eff\u53f6\u3001\u5149\u6e90\uff09</li>  \n    <li>C3/C5\u53d8\u5316\u6570\u636e\u8868\u683c</li>  \n    <li>\u89d2\u8272\u5361\u7247</li>  \n  </ol>  \n\n  <h3>\u56db\u3001\u7ec3\u4e60\u4e0e\u5b9e\u8df5</h3>  \n  <p class='time'>\u65f6\u95f4\uff1a20\u5206\u949f</p>  \n  <ul>  \n    <li>\u6d4b\u5b9a\u4e0d\u540c\u5149\u7167\u5f3a\u5ea6\u4e0b\u5c0f\u7403\u85fb\u7684\u6c27\u6c14\u91ca\u653e\u901f\u7387\uff08\u5b9e\u9a8c\u64cd\u4f5c\uff09</li>  \n    <li>\u5206\u6790\u201c\u6e29\u5ba4\u4e2dCO\u2082\u6d53\u5ea6\u5bf9\u756a\u8304\u4ea7\u91cf\u5f71\u54cd\u201d\u7684\u56fe\u8868</li>  \n    <li>\u8bbe\u8ba1\u201c\u9a8c\u8bc1\u5149\u5408\u4f5c\u7528\u9700\u8981\u5149\u201d\u7684\u5bf9\u7167\u5b9e\u9a8c\u65b9\u6848</li>  \n  </ul>  \n  <p>\u6240\u9700\u8d44\u6e90\uff1a</p>  \n  <ol>  \n    <li>\u4fbf\u643a\u5f0f\u6c27\u6c14\u6d4b\u5b9a\u4eea</li>  \n    <li>\u4e0d\u540c\u5149\u7167\u5f3a\u5ea6\u7684\u5b9e\u9a8c\u88c5\u7f6e</li>  \n    <li>\u6e29\u5ba4\u4f5c\u7269\u751f\u4ea7\u6848\u4f8b\u6570\u636e</li>  \n  </ol>  \n\n  <h3>\u4e94\u3001\u603b\u7ed3\u4e0e\u8bc4\u4ef7</h3>  \n  <p class='time'>\u65f6\u95f4\uff1a10\u5206\u949f</p>  \n  <ul>  \n    <li>\u7ed8\u5236\u5149\u5408\u4f5c\u7528\u5168\u8fc7\u7a0b\u6982\u5ff5\u56fe\uff08\u5b66\u751f\u9ed1\u677f\u5c55\u793a\uff09</li>  \n    <li>\u53e3\u8ff0\u201c\u5149\u5408\u4f5c\u7528\u4e0e\u547c\u5438\u4f5c\u7528\u7684\u80fd\u91cf\u5173\u7cfb\u201d</li>  \n    <li>\u53d1\u5e03\u751f\u6001\u6848\u4f8b\u5206\u6790\u4f5c\u4e1a\uff1a\u201c\u68ee\u6797\u780d\u4f10\u5bf9\u78b3\u5faa\u73af\u7684\u5f71\u54cd\u201d</li>  \n  </ul>  \n  <p>\u6240\u9700\u8d44\u6e90\uff1a</p>  \n  <ol>  \n    <li>\u7a7a\u767d\u6982\u5ff5\u56fe\u6a21\u677f</li>  \n    <li>\u751f\u6001\u7cfb\u7edf\u80fd\u91cf\u6d41\u52a8\u793a\u610f\u56fe</li>  \n    <li>\u4f5c\u4e1a\u6307\u5bfc\u6587\u6863</li>  \n  </ol>  \n</div>"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='problem-simulation'><h4>\u53ef\u80fd\u51fa\u73b0\u7684\u95ee\u9898</h4><ul><li>\u95ee\u98981</li></ul><h4>\u9884\u671f\u5b66\u4e60\u6548\u679c</h4><ul><li>\u6548\u679c1</li></ul><script id='chart-data'>{'labels':[...], 'datasets':[...]}</script></div>"}]}}}
+2025-06-17 21:21:08,532 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:09,345 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:09,448 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:09,573 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:09,754 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:10,671 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:11,003 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:11,337 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:11,646 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:12,000 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:12,312 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:12,588 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:12,902 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:13,112 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:13,313 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:13,522 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:13,764 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:14,018 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:14,288 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:14,542 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:14,738 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:14,922 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:15,140 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:15,325 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:15,566 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:15,810 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:15,981 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:16,185 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:16,365 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:16,554 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:16,743 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:16,931 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:17,194 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:17,460 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:17,709 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:17,901 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:18,123 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:18,327 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:18,590 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:18,783 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:18,987 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:19,185 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:19,393 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:19,657 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:19,843 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:20,058 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:20,258 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:20,457 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:20,659 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:20,863 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:21,084 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:21,299 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:21,513 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:21,714 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:21,905 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:22,162 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:22,365 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:22,557 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:22,756 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:22,942 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:23,145 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:23,349 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:23,544 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:23,735 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:23,939 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:24,128 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:24,325 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:24,520 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:24,710 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:24,902 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:25,102 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:25,312 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:25,506 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:25,709 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:25,906 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:26,114 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:26,319 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:26,579 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:26,776 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:26,968 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:27,176 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:27,382 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:27,586 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:27,841 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:28,114 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:28,384 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:28,663 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:29,011 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:29,392 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:29,661 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:29,940 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:30,302 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:30,580 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:30,844 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:31,118 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:31,335 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:31,552 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:31,780 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:31,971 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:32,181 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:32,389 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:32,596 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:32,850 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:33,059 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:33,256 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:33,459 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:33,657 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:33,856 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:34,061 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:34,258 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:34,462 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:34,662 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:34,859 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:35,062 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:35,268 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:35,462 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:35,662 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:35,862 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:36,065 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:36,268 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:36,482 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:36,682 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:36,886 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:37,098 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:37,306 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:37,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:37,838 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:38,100 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:38,362 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:21:38,712 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:22:00,070 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:22:00,070 - DEBUG - API response completed
+2025-06-17 21:22:00,072 - INFO - ³É¹¦Éú³ÉÎÊÌâÄ£Äâ£¬³¤¶È: 1164
+2025-06-17 21:22:00,073 - INFO - 192.168.114.233 - - [17/Jun/2025 21:22:00] "POST /generate_problem_simulation HTTP/1.1" 200 -
+2025-06-17 21:22:00,267 - DEBUG - WebSocket connection closed
+2025-06-17 21:23:16,083 - INFO - APP_ID: 4cabacd2
+2025-06-17 21:23:16,084 - INFO - API_KEY: 7d2cd40dd21e530da80e9069c6e155b8
+2025-06-17 21:23:16,084 - INFO - API_SECRET: OTZm...
+2025-06-17 21:23:16,085 - INFO - Æô¶¯Ó¦ÓÃ£¬¶Ë¿Ú: 5000, µ÷ÊÔÄ£Ê½: False
+2025-06-17 21:23:16,085 - INFO - ÐÇ»ðAPIÅäÖÃ:
+2025-06-17 21:23:16,085 - INFO -   APP_ID: 4cabacd2
+2025-06-17 21:23:16,085 - INFO -   API_KEY: 7d2cd4...
+2025-06-17 21:23:16,085 - INFO -   API_SECRET: OTZmMj...
+2025-06-17 21:23:16,097 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.233:5000
+2025-06-17 21:23:16,097 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-17 21:23:19,182 - INFO - 192.168.114.233 - - [17/Jun/2025 21:23:19] "GET / HTTP/1.1" 200 -
+2025-06-17 21:23:35,873 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:23:35,873 - INFO - ¿Î³Ì±êÌâ: '¹´¹É¶¨Àí'
+2025-06-17 21:23:35,873 - INFO - ÎÞ¿Î³ÌÃèÊö
+2025-06-17 21:23:35,873 - INFO - ÎÞ½ÌÑ§Ä¿±ê
+2025-06-17 21:23:35,873 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:23:35,873 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0iVTZVSXc2R0IwOWlvZkRSdStKTGVubDRqQWRZSzI3WTJZT3o0OER4SitDTT0i&date=Tue%2C+17+Jun+2025+13%3A23%3A35+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:23:36,162 - INFO - Websocket connected
+2025-06-17 21:23:36,162 - DEBUG - WebSocket connection opened
+2025-06-17 21:23:36,162 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u52fe\u80a1\u5b9a\u7406"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:23:36,740 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:36,827 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:36,922 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:37,067 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:37,264 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:37,592 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:37,924 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:38,327 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:38,663 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:38,941 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:39,208 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:39,475 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:39,725 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:40,038 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:40,406 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:40,646 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:40,872 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:41,080 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:41,283 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:41,522 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:41,754 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:41,971 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:42,180 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:42,368 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:42,551 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:42,739 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:42,902 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,090 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,265 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,435 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,599 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,762 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:43,922 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,101 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,261 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,426 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,586 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,739 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:44,873 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,043 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,190 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,343 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,496 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,645 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,786 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:45,923 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,073 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,222 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,361 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,510 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,648 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,785 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:46,923 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,067 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,221 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,356 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,497 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,640 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,780 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:47,915 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,060 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,206 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,361 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,503 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,660 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,791 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:48,938 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,088 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,268 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,388 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,542 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,687 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,827 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:49,974 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,127 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,288 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,443 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,601 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,760 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:50,915 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:51,127 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:51,336 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:51,545 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:51,749 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:52,020 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:52,233 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:52,440 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:52,647 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:52,851 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:23:59,527 - DEBUG - API response completed
+2025-06-17 21:23:59,527 - INFO - ³É¹¦Éú³ÉË¼Î¬µ¼Í¼£¬³¤¶È: 454
+2025-06-17 21:23:59,532 - WARNING - ÎÞÐ§µÄË¼Î¬µ¼Í¼¸ñÊ½: <div class='mindmap'><h3>¿Î³Ì½éÉÜ</h3><ul><li>¹´¹É¶¨ÀíµÄÀúÊ·µØÎ»</li><li>ÔÚÊýÑ§ÌåÏµÖÐµÄ»ù´¡×÷ÓÃ</li></ul><h3>½ÌÑ§Ä¿±ê</h3><ul><l...
+2025-06-17 21:23:59,532 - INFO - 192.168.114.233 - - [17/Jun/2025 21:23:59] "[35m[1mPOST /generate_mindmap HTTP/1.1[0m" 500 -
+2025-06-17 21:23:59,731 - DEBUG - WebSocket connection closed
+2025-06-17 21:24:31,206 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼Éú³ÉÇëÇó
+2025-06-17 21:24:31,206 - INFO - ¿Î³Ì±êÌâ: '¹´¹É¶¨Àí'
+2025-06-17 21:24:31,206 - INFO - ÎÞ¿Î³ÌÃèÊö
+2025-06-17 21:24:31,206 - INFO - ÎÞ½ÌÑ§Ä¿±ê
+2025-06-17 21:24:31,206 - INFO - µ÷ÓÃÐÇ»ðAPIÉú³ÉË¼Î¬µ¼Í¼...
+2025-06-17 21:24:31,206 - DEBUG - Generated WebSocket URL: wss://spark-api.xf-yun.com/v1/x1?authorization=YXBpX2tleT0iN2QyY2Q0MGRkMjFlNTMwZGE4MGU5MDY5YzZlMTU1YjgiLCBhbGdvcml0aG09ImhtYWMtc2hhMjU2IiwgaGVhZGVycz0iaG9zdCBkYXRlIHJlcXVlc3QtbGluZSIsIHNpZ25hdHVyZT0idHNsWG1TcVV2a2V3emwwN1NGWGluOFkzZWhVOFBLeU9LSS8vL2hJZnhCST0i&date=Tue%2C+17+Jun+2025+13%3A24%3A31+GMT&host=spark-api.xf-yun.com
+2025-06-17 21:24:31,945 - INFO - Websocket connected
+2025-06-17 21:24:31,945 - DEBUG - WebSocket connection opened
+2025-06-17 21:24:31,945 - DEBUG - Sent request: {"header": {"app_id": "4cabacd2", "uid": "1234"}, "parameter": {"chat": {"domain": "x1", "temperature": 0.5, "max_tokens": 4096, "stream": true}}, "payload": {"message": {"text": [{"role": "system", "content": "\u4f60\u662f\u4e00\u4e2a\u4e13\u4e1a\u7684\u6559\u80b2\u8f85\u52a9AI\uff0c\u64c5\u957f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u3002\u8bf7\u6839\u636e\u7528\u6237\u63d0\u4f9b\u7684\u4fe1\u606f\u751f\u6210\u8bfe\u7a0b\u601d\u7ef4\u5bfc\u56fe\u7684HTML\u4ee3\u7801\u3002\u8f93\u51fa\u683c\u5f0f\u8981\u6c42\uff1a1. \u53ea\u8f93\u51faHTML\u4ee3\u7801\uff0c\u4e0d\u8981\u5305\u542b\u4efb\u4f55\u89e3\u91ca2. \u4f7f\u7528<div class='mindmap'>\u4f5c\u4e3a\u5bb9\u56683. \u4f7f\u7528<h3>\u8868\u793a\u4e3b\u8981\u4e3b\u98984. \u4f7f\u7528<ul>\u548c<li>\u8868\u793a\u5c42\u7ea7\u7ed3\u67845. \u4e0d\u8981\u5305\u542b\u4efb\u4f55CSS\u6216JavaScript6. \u601d\u7ef4\u5bfc\u56fe\u5e94\u8be5\u5305\u542b\u4ee5\u4e0b\u90e8\u5206:    - \u8bfe\u7a0b\u4ecb\u7ecd   - \u6559\u5b66\u76ee\u6807   - \u6838\u5fc3\u6982\u5ff5   - \u5173\u952e\u77e5\u8bc6\u70b9   - \u6559\u5b66\u65b9\u6cd5   - \u8bc4\u4f30\u65b9\u5f0f"}, {"role": "user", "content": "\u8bfe\u7a0b\u6807\u9898: \u52fe\u80a1\u5b9a\u7406"}, {"role": "user", "content": "\u793a\u4f8b\u683c\u5f0f\uff1a<div class='mindmap'><h3>\u4e3b\u98981</h3><ul><li>\u5b50\u4e3b\u98981.1</li></ul></div>"}]}}}
+2025-06-17 21:24:32,465 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:32,556 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:32,648 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:32,832 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:32,993 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:33,209 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:36,403 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:36,741 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:37,071 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:37,403 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:37,742 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:38,072 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:38,405 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:38,773 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:39,076 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:39,411 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:40,907 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:41,242 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:41,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:41,905 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:42,237 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:42,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:42,904 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:43,236 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:43,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:43,903 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:44,237 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:44,582 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:44,903 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:45,238 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:45,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:45,901 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:46,236 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:46,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:46,902 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:47,236 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:47,569 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:47,901 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:48,236 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:48,578 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:48,826 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:49,071 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:49,324 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:49,572 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:49,807 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:50,039 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:50,281 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:50,517 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:50,744 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:50,961 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:51,186 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:51,408 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:51,626 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:51,844 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:52,074 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:52,292 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:52,510 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:52,727 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:52,935 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:53,154 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:53,368 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:53,587 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:53,792 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:54,005 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:54,215 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:54,432 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:54,642 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:54,851 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:55,069 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:55,281 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:55,501 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:55,701 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:55,904 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:56,116 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:56,323 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:56,534 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:56,741 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:56,945 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:57,154 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:57,365 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:57,576 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:57,784 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:58,071 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:58,200 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:58,407 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:58,613 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:58,822 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:59,026 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:59,238 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:59,448 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:59,658 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:24:59,868 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:25:00,078 - WARNING - Message does not contain 'content' key.
+2025-06-17 21:25:05,641 - DEBUG - API response completed
+2025-06-17 21:25:05,642 - INFO - ³É¹¦Éú³ÉË¼Î¬µ¼Í¼£¬³¤¶È: 911
+2025-06-17 21:25:05,642 - INFO - Ë¼Î¬µ¼Í¼¸ñÊ½ÑéÖ¤Í¨¹ý
+2025-06-17 21:25:05,642 - INFO - 192.168.114.233 - - [17/Jun/2025 21:25:05] "POST /generate_mindmap HTTP/1.1" 200 -
+2025-06-17 21:25:05,832 - DEBUG - WebSocket connection closed
+2025-06-17 21:25:48,799 - INFO - ÊÕµ½Ë¼Î¬µ¼Í¼µ¼³öÇëÇó
+2025-06-17 21:25:48,810 - INFO - ¿Î³Ì±êÌâ: '¹´¹É¶¨Àí'
+2025-06-17 21:25:48,810 - INFO - Ë¼Î¬µ¼Í¼³¤¶È: 952
+2025-06-17 21:25:48,811 - ERROR - µ¼³öË¼Î¬µ¼Í¼Ê±·¢ÉúÒì³£: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 615, in export_mindmap
+    Éú³ÉÊ±¼ä: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}
+           ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\30536\Desktop\test1\test1\app.py", line 615, in export_mindmap
+    Éú³ÉÊ±¼ä: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}
+           ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2025-06-17 21:25:48,811 - INFO - 192.168.114.233 - - [17/Jun/2025 21:25:48] "[35m[1mPOST /export_mindmap HTTP/1.1[0m" 500 -
