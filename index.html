@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教案设计辅助AI - 星火大模型集成</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+
+    <!-- 自定义Tailwind配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36D399',
+                        warning: '#FFAA33',
+                        success: '#22C55E',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+
+            .stage-active {
+                background-color: #165DFF10;
+                border: 1px solid #165DFF;
+                color: #165DFF;
+            }
+
+            .loading-spinner {
+                border: 3px solid rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                border-top: 3px solid #165DFF;
+                width: 30px;
+                height: 30px;
+                animation: spin 1s linear infinite;
+                margin: 0 auto 10px;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .mindmap-node {
+                border-left: 3px solid #165DFF;
+                padding: 8px 12px;
+                margin: 5px 0;
+                background-color: #f9fafb;
+                border-radius: 0 8px 8px 0;
+            }
+
+            .mindmap-node h3 {
+                font-weight: 600;
+                color: #165DFF;
+                margin-bottom: 5px;
+            }
+
+            .mindmap-children {
+                padding-left: 20px;
+                margin-left: 10px;
+                border-left: 1px dashed #cbd5e1;
+            }
+
+            .flow-step {
+                background: #f8fafc;
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 15px;
+                border-left: 4px solid #165DFF;
+            }
+
+            .problem-item {
+                background: #fffbeb;
+                border-left: 3px solid #f59e0b;
+                padding: 10px 15px;
+                margin-bottom: 8px;
+                border-radius: 0 6px 6px 0;
+            }
+
+            .strength-item {
+                background: #f0fdf4;
+                border-left: 3px solid #10b981;
+                padding: 10px 15px;
+                margin-bottom: 8px;
+                border-radius: 0 6px 6px 0;
+            }
+
+            .improvement-item {
+                background: #fef2f2;
+                border-left: 3px solid #ef4444;
+                padding: 10px 15px;
+                margin-bottom: 8px;
+                border-radius: 0 6px 6px 0;
+            }
+
+            /* 新增：响应式设计优化 */
+            @media (max-width: 768px) {
+                .grid-cols-1 {
+                    grid-template-columns: 1fr !important;
+                }
+
+                .stage-indicator {
+                    margin-bottom: 10px;
+                }
+
+                .flex-col-reverse {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+<!-- 导航栏 -->
+<nav class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <i class="fa-solid fa-graduation-cap text-primary text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">教案设计AI</span>
+                    <span class="ml-2 text-xs bg-primary/10 text-primary px-2 py-1 rounded">星火大模型</span>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex space-x-8">
+                    <a href="#stage1"
+                       class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">思维导图</a>
+                    <a href="#stage2"
+                       class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">教学流程</a>
+                    <a href="#stage3"
+                       class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">问题模拟</a>
+                    <a href="#stage4"
+                       class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">评价优化</a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <button id="export-full-plan"
+                        class="ml-4 block px-4 py-2 rounded-md text-white bg-secondary hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center">
+                    <i class="fa-solid fa-download mr-1"></i> 导出完整教案
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- 主内容区 -->
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- 欢迎信息 -->
+    <section class="mb-10">
+        <h1 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-gray-900 mb-2">教案设计辅助AI</h1>
+        <p class="text-gray-600 max-w-3xl">
+            基于星火大模型智能生成思维导图、教学流程、问题模拟和优化建议，帮助您高效完成教案设计。</p>
+        <div class="mt-4 flex items-center text-sm text-gray-500">
+            <i class="fa-solid fa-bolt text-warning mr-2"></i>
+            <span>由讯飞星火大模型提供AI支持</span>
+        </div>
+    </section>
+
+    <!-- 阶段指示器 -->
+    <section class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div id="stage-indicator-1"
+                 class="stage-active stage-indicator flex flex-col items-center p-4 rounded-lg shadow-sm cursor-pointer">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center mb-2 bg-primary/10">
+                    <i class="fa-solid fa-sitemap text-xl"></i>
+                </div>
+                <h3 class="font-medium">思维导图</h3>
+                <p class="text-xs text-gray-500 mt-1">基于课程内容</p>
+            </div>
+            <div id="stage-indicator-2"
+                 class="bg-gray-100 text-gray-500 stage-indicator flex flex-col items-center p-4 rounded-lg shadow-sm cursor-pointer">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center mb-2 bg-gray-200">
+                    <i class="fa-solid fa-clipboard-list text-xl"></i>
+                </div>
+                <h3 class="font-medium">教学流程</h3>
+                <p class="text-xs text-gray-500 mt-1">基于思维导图</p>
+            </div>
+            <div id="stage-indicator-3"
+                 class="bg-gray-100 text-gray-500 stage-indicator flex flex-col items-center p-4 rounded-lg shadow-sm cursor-pointer">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center mb-2 bg-gray-200">
+                    <i class="fa-solid fa-brain text-xl"></i>
+                </div>
+                <h3 class="font-medium">问题模拟</h3>
+                <p class="text-xs text-gray-500 mt-1">基于教学流程</p>
+            </div>
+            <div id="stage-indicator-4"
+                 class="bg-gray-100 text-gray-500 stage-indicator flex flex-col items-center p-4 rounded-lg shadow-sm cursor-pointer">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center mb-2 bg-gray-200">
+                    <i class="fa-solid fa-pencil-ruler text-xl"></i>
+                </div>
+                <h3 class="font-medium">评价优化</h3>
+                <p class="text-xs text-gray-500 mt-1">基于模拟结果</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第一阶段：思维导图 -->
+    <section id="stage1" class="mb-12">
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fa-solid fa-sitemap text-primary mr-2"></i> 第一阶段：思维导图设计
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- 课程内容输入 -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium mb-3">课程内容</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">课程标题</label>
+                                <input type="text" id="course-title"
+                                       class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors duration-200"
+                                       placeholder="请输入课程标题" value="光合作用">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">课程描述</label>
+                                <textarea id="course-description" rows="8"
+                                          class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors duration-200"
+                                          placeholder="请详细描述课程内容...">光合作用是绿色植物利用光能将二氧化碳和水转化为有机物和氧气的过程。本课程将介绍光合作用的基本原理、反应过程以及在生态系统中的重要性。</textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">教学目标</label>
+                                <textarea id="teaching-objectives" rows="4"
+                                          class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors duration-200"
+                                          placeholder="请列出教学目标...">1. 理解光合作用的基本概念和原理
+2. 掌握光合作用的光反应和暗反应过程
+3. 了解光合作用在生态系统中的重要性
+4. 能够解释光合作用与呼吸作用的关系</textarea>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button id="generate-mindmap"
+                                        class="flex-1 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                    <i class="fa-solid fa-magic mr-2"></i> 生成思维导图
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 思维导图展示 -->
+                <div class="lg:col-span-2">
+                    <div class="bg-gray-50 p-4 rounded-lg h-full">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="font-medium">思维导图预览</h3>
+                            <button id="export-mindmap"
+                                    class="px-3 py-1 text-sm bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                <i class="fa-solid fa-download mr-1"></i> 导出思维导图
+                            </button>
+                        </div>
+                        <div id="mindmap-container"
+                             class="h-[400px] w-full bg-white rounded-lg border border-gray-200 overflow-auto p-4">
+                            <div id="mindmap-placeholder" class="h-full flex items-center justify-center text-gray-400">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-sitemap text-5xl mb-4"></i>
+                                    <p>输入课程内容并生成思维导图后将在此处显示</p>
+                                </div>
+                            </div>
+                            <div id="mindmap-loading" class="h-full flex items-center justify-center hidden">
+                                <div class="text-center">
+                                    <div class="loading-spinner"></div>
+                                    <p>AI正在生成思维导图，请稍候...</p>
+                                    <p class="text-sm text-gray-500 mt-2">正在调用星火大模型API</p>
+                                </div>
+                            </div>
+                            <div id="mindmap-render" class="hidden space-y-4">
+                                <!-- 思维导图将在这里动态生成 -->
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button id="to-stage2"
+                                    class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center"
+                                    disabled>
+                                <i class="fa-solid fa-arrow-right mr-2"></i> 进入第二阶段
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二阶段：教学流程 -->
+    <section id="stage2" class="mb-12 hidden">
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fa-solid fa-clipboard-list text-primary mr-2"></i> 第二阶段：教学流程设计
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- 思维导图参考 -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium mb-3">思维导图参考</h3>
+                        <div id="mindmap-reference"
+                             class="h-[300px] bg-white rounded-lg border border-gray-200 overflow-auto p-4">
+                            <div class="text-center text-gray-400 py-10">
+                                <i class="fa-solid fa-spinner fa-spin"></i> 加载中...
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button id="regenerate-flow"
+                                    class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-refresh mr-2"></i> 重新生成教学流程
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 教学流程设计 -->
+                <div class="lg:col-span-2">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="font-medium">教学流程设计</h3>
+                            <div class="flex space-x-2">
+                                <button id="export-flow"
+                                        class="px-3 py-1 text-sm bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-download mr-1"></i> 导出教学流程
+                                </button>
+                                <button id="flow-to-pdf"
+                                        class="px-3 py-1 text-sm bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-file-pdf mr-1"></i> 导出PDF
+                                </button>
+                            </div>
+                        </div>
+                        <div id="teaching-flow-container"
+                             class="bg-white rounded-lg border border-gray-200 overflow-auto">
+                            <div id="flow-placeholder" class="h-64 flex items-center justify-center text-gray-400">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-clipboard-list text-5xl mb-4"></i>
+                                    <p>生成思维导图后，点击"重新生成教学流程"按钮</p>
+                                </div>
+                            </div>
+                            <div id="teaching-flow-loading" class="h-full flex items-center justify-center hidden">
+                                <div class="text-center">
+                                    <div class="loading-spinner"></div>
+                                    <p>AI正在生成教学流程，请稍候...</p>
+                                    <p class="text-sm text-gray-500 mt-2">正在调用星火大模型API</p>
+                                </div>
+                            </div>
+                            <div id="teaching-flow" class="hidden p-4 space-y-4">
+                                <!-- 教学流程将在这里动态生成 -->
+                            </div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <button id="back-to-stage1"
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> 返回上一阶段
+                            </button>
+                            <button id="to-stage3"
+                                    class="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center"
+                                    disabled>
+                                <i class="fa-solid fa-arrow-right mr-2"></i> 进入第三阶段
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三阶段：问题模拟 -->
+    <section id="stage3" class="mb-12 hidden">
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fa-solid fa-brain text-primary mr-2"></i> 第三阶段：问题模拟与预期效果
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- 教学流程参考 -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium mb-3">教学流程参考</h3>
+                        <div id="flow-reference"
+                             class="h-[300px] bg-white rounded-lg border border-gray-200 overflow-auto p-4">
+                            <div class="text-center text-gray-400 py-10">
+                                <i class="fa-solid fa-spinner fa-spin"></i> 加载中...
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button id="regenerate-simulation"
+                                    class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-refresh mr-2"></i> 重新模拟
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 问题模拟和预期效果 -->
+                <div class="lg:col-span-2">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="font-medium">问题模拟与预期效果</h3>
+                            <div class="flex space-x-2">
+                                <button id="export-simulation"
+                                        class="px-3 py-1 text-sm bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-download mr-1"></i> 导出模拟结果
+                                </button>
+                                <button id="simulation-to-pdf"
+                                        class="px-3 py-1 text-sm bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-file-pdf mr-1"></i> 导出PDF
+                                </button>
+                            </div>
+                        </div>
+                        <div id="simulation-container" class="bg-white rounded-lg border border-gray-200 overflow-auto">
+                            <div id="simulation-placeholder"
+                                 class="h-64 flex items-center justify-center text-gray-400">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-brain text-5xl mb-4"></i>
+                                    <p>生成教学流程后，点击"重新模拟"按钮</p>
+                                </div>
+                            </div>
+                            <div id="simulation-loading" class="h-full flex items-center justify-center hidden">
+                                <div class="text-center">
+                                    <div class="loading-spinner"></div>
+                                    <p>AI正在模拟课堂问题，请稍候...</p>
+                                    <p class="text-sm text-gray-500 mt-2">正在调用星火大模型API</p>
+                                </div>
+                            </div>
+                            <div id="simulation-results" class="hidden p-4 space-y-6">
+                                <!-- 内容由AI生成 -->
+                            </div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <button id="back-to-stage2"
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> 返回上一阶段
+                            </button>
+                            <button id="to-stage4"
+                                    class="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center"
+                                    disabled>
+                                <i class="fa-solid fa-arrow-right mr-2"></i> 进入第四阶段
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四阶段：评价优化 -->
+    <section id="stage4" class="mb-12 hidden">
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fa-solid fa-pencil-ruler text-primary mr-2"></i> 第四阶段：评价与优化建议
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- 问题模拟参考 -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium mb-3">问题模拟参考</h3>
+                        <div id="simulation-reference"
+                             class="h-[300px] bg-white rounded-lg border border-gray-200 overflow-auto p-4">
+                            <div class="text-center text-gray-400 py-10">
+                                <i class="fa-solid fa-spinner fa-spin"></i> 加载中...
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button id="regenerate-evaluation"
+                                    class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-refresh mr-2"></i> 重新生成评价
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 评价与优化建议 -->
+                <div class="lg:col-span-2">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="font-medium">评价与优化建议</h3>
+                            <div class="flex space-x-2">
+                                <button id="export-evaluation"
+                                        class="px-3 py-1 text-sm bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-download mr-1"></i> 导出评价
+                                </button>
+                                <button id="evaluation-to-pdf"
+                                        class="px-3 py-1 text-sm bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center">
+                                    <i class="fa-solid fa-file-pdf mr-1"></i> 导出PDF
+                                </button>
+                            </div>
+                        </div>
+                        <div id="evaluation-container" class="bg-white rounded-lg border border-gray-200 overflow-auto">
+                            <div id="evaluation-placeholder"
+                                 class="h-64 flex items-center justify-center text-gray-400">
+                                <div class="text-center">
+                                    <i class="fa-solid fa-pencil-ruler text-5xl mb-4"></i>
+                                    <p>生成问题模拟后，点击"重新生成评价"按钮</p>
+                                </div>
+                            </div>
+                            <div id="evaluation-loading" class="h-full flex items-center justify-center hidden">
+                                <div class="text-center">
+                                    <div class="loading-spinner"></div>
+                                    <p>AI正在生成评价建议，请稍候...</p>
+                                    <p class="text-sm text-gray-500 mt-2">正在调用星火大模型API</p>
+                                </div>
+                            </div>
+                            <div id="evaluation-results" class="hidden p-4 space-y-6">
+                                <!-- 内容由AI生成 -->
+                            </div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <button id="back-to-stage3"
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors duration-200 shadow-sm flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> 返回上一阶段
+                            </button>
+                            <button id="to-complete"
+                                    class="px-4 py-2 bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center justify-center"
+                                    disabled>
+                                <i class="fa-solid fa-check mr-2"></i> 完成教案设计
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 完成阶段 -->
+    <section id="complete-stage" class="mb-12 hidden">
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="text-center py-10">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-success/20 text-success mb-4">
+                    <i class="fa-solid fa-check text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">恭喜！教案设计已完成</h2>
+                <p class="text-gray-600 max-w-xl mx-auto mb-6">
+                    您的教案已通过四个阶段的智能设计和优化，点击下方按钮导出完整教案。</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button id="export-final-plan"
+                            class="px-6 py-3 bg-secondary text-white rounded-md hover:bg-secondary/90 transition-colors duration-200 shadow-sm flex items-center mx-auto">
+                        <i class="fa-solid fa-download mr-2"></i> 导出完整教案
+                    </button>
+                    <button id="new-plan"
+                            class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200 shadow-sm flex items-center mx-auto">
+                        <i class="fa-solid fa-plus mr-2"></i> 开始新教案
+                    </button>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-200 max-w-xl mx-auto">
+                    <h3 class="font-medium text-lg mb-4">教案概览</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">课程信息</h4>
+                            <p class="text-sm text-gray-600 mb-1"><span class="font-medium">标题:</span> <span
+                                    id="summary-title">--</span></p>
+                            <p class="text-sm text-gray-600 mb-1"><span class="font-medium">主题数:</span> <span
+                                    id="summary-topics">--</span></p>
+                            <p class="text-sm text-gray-600 mb-1"><span class="font-medium">环节数:</span> <span
+                                    id="summary-sections">--</span></p>
+                            <p class="text-sm text-gray-600"><span class="font-medium">预计时长:</span> <span
+                                    id="summary-duration">--</span></p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">评价结果</h4>
+                            <p class="text-sm text-gray-600 mb-1"><span class="font-medium">整体评分:</span> <span
+                                    id="summary-rating">--</span></p>
+                            <p class="text-sm text-gray-600 mb-1"><span class="font-medium">优点数:</span> <span
+                                    id="summary-strengths">--</span></p>
+                            <p class="text-sm text-gray-600"><span class="font-medium">改进点数:</span> <span
+                                    id="summary-improvements">--</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- 页脚 -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-graduation-cap text-primary text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">教案设计AI</span>
+                </div>
+                <p class="text-gray-400 mt-2 text-sm">智能辅助教师教学设计，提升教学质量</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 教案设计AI. 保留所有权利.</p>
+            <p class="mt-1">由讯飞星火大模型提供技术支持</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function () {
+        // 后端API端点
+        const API_ENDPOINTS = {
+            generateMindmap: '/generate_mindmap',
+            generateTeachingFlow: '/generate_teaching_flow',
+            generateProblemSimulation: '/generate_problem_simulation',
+            generateEvaluation: '/generate_evaluation',
+            exportMindmap: '/export_mindmap',
+            exportFullPlan: '/export_full_plan'
+        };
+
+        // 当前课程数据
+        let currentCourseData = {
+            title: '',
+            description: '',
+            objectives: '',
+            mindmap: '',
+            teachingFlow: '',
+            simulation: '',
+            evaluation: ''
+        };
+
+        // 阶段导航逻辑
+        document.getElementById('to-stage2').addEventListener('click', function () {
+            document.getElementById('stage1').classList.add('hidden');
+            document.getElementById('stage2').classList.remove('hidden');
+            document.getElementById('stage-indicator-2').classList.remove('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-2').classList.add('stage-active');
+            // 复制思维导图内容到参考区域
+            const mindmapContent = document.getElementById('mindmap-render').innerHTML;
+            document.getElementById('mindmap-reference').innerHTML = mindmapContent;
+        });
+
+        document.getElementById('back-to-stage1').addEventListener('click', function () {
+            document.getElementById('stage2').classList.add('hidden');
+            document.getElementById('stage1').classList.remove('hidden');
+            document.getElementById('stage-indicator-2').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-2').classList.remove('stage-active');
+        });
+
+        document.getElementById('to-stage3').addEventListener('click', function () {
+            document.getElementById('stage2').classList.add('hidden');
+            document.getElementById('stage3').classList.remove('hidden');
+            document.getElementById('stage-indicator-3').classList.remove('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-3').classList.add('stage-active');
+            // 复制教学流程内容到参考区域
+            const flowContent = document.getElementById('teaching-flow').innerHTML;
+            document.getElementById('flow-reference').innerHTML = flowContent;
+        });
+
+        document.getElementById('back-to-stage2').addEventListener('click', function () {
+            document.getElementById('stage3').classList.add('hidden');
+            document.getElementById('stage2').classList.remove('hidden');
+            document.getElementById('stage-indicator-3').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-3').classList.remove('stage-active');
+        });
+
+        document.getElementById('to-stage4').addEventListener('click', function () {
+            document.getElementById('stage3').classList.add('hidden');
+            document.getElementById('stage4').classList.remove('hidden');
+            document.getElementById('stage-indicator-4').classList.remove('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-4').classList.add('stage-active');
+            // 复制模拟结果内容到参考区域
+            const simulationContent = document.getElementById('simulation-results').innerHTML;
+            document.getElementById('simulation-reference').innerHTML = simulationContent;
+        });
+
+        document.getElementById('back-to-stage3').addEventListener('click', function () {
+            document.getElementById('stage4').classList.add('hidden');
+            document.getElementById('stage3').classList.remove('hidden');
+            document.getElementById('stage-indicator-4').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-4').classList.remove('stage-active');
+        });
+
+        document.getElementById('to-complete').addEventListener('click', function () {
+            document.getElementById('stage4').classList.add('hidden');
+            document.getElementById('complete-stage').classList.remove('hidden');
+
+            // 填充概览信息
+            const courseTitle = document.getElementById('course-title').value;
+            document.getElementById('summary-title').textContent = courseTitle;
+
+            // 计算主题数（假设每个h3标签是一个主题）
+            const topicsCount = document.getElementById('mindmap-render').querySelectorAll('h3').length;
+            document.getElementById('summary-topics').textContent = topicsCount;
+
+            // 计算环节数（假设每个教学环节是一个li标签）
+            const sectionsCount = document.getElementById('teaching-flow').querySelectorAll('li').length;
+            document.getElementById('summary-sections').textContent = sectionsCount;
+
+            // 计算预计时长
+            const timeElements = document.getElementById('teaching-flow').querySelectorAll('.time');
+            let totalTime = 0;
+            timeElements.forEach(el => {
+                const timeStr = el.textContent.trim();
+                const timeNum = parseInt(timeStr);
+                if (!isNaN(timeNum)) {
+                    totalTime += timeNum;
+                }
+            });
+            document.getElementById('summary-duration').textContent = `${totalTime}分钟`;
+
+            // 评分信息
+            const rating = document.getElementById('rating-score')?.textContent || '8.5';
+            document.getElementById('summary-rating').textContent = rating;
+
+            // 优点数和改进点数
+            const strengthsCount = document.getElementById('design-strengths')?.querySelectorAll('li').length || 4;
+            const improvementsCount = document.getElementById('design-improvements')?.querySelectorAll('li').length || 2;
+            document.getElementById('summary-strengths').textContent = strengthsCount;
+            document.getElementById('summary-improvements').textContent = improvementsCount;
+        });
+
+        document.getElementById('new-plan').addEventListener('click', function () {
+            // 重置所有输入和结果
+            document.getElementById('course-title').value = '';
+            document.getElementById('course-description').value = '';
+            document.getElementById('teaching-objectives').value = '';
+
+            document.getElementById('mindmap-placeholder').style.display = 'flex';
+            document.getElementById('mindmap-render').style.display = 'none';
+            document.getElementById('mindmap-render').innerHTML = '';
+
+            document.getElementById('flow-placeholder').style.display = 'flex';
+            document.getElementById('teaching-flow').style.display = 'none';
+            document.getElementById('teaching-flow').innerHTML = '';
+
+            document.getElementById('simulation-placeholder').style.display = 'flex';
+            document.getElementById('simulation-results').style.display = 'none';
+            document.getElementById('simulation-results').innerHTML = '';
+
+            document.getElementById('evaluation-placeholder').style.display = 'flex';
+            document.getElementById('evaluation-results').style.display = 'none';
+            document.getElementById('evaluation-results').innerHTML = '';
+
+            // 重置阶段指示器
+            document.getElementById('stage-indicator-2').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-2').classList.remove('stage-active');
+            document.getElementById('stage-indicator-3').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-3').classList.remove('stage-active');
+            document.getElementById('stage-indicator-4').classList.add('bg-gray-100', 'text-gray-500');
+            document.getElementById('stage-indicator-4').classList.remove('stage-active');
+
+            // 回到第一阶段
+            document.getElementById('complete-stage').classList.add('hidden');
+            document.getElementById('stage1').classList.remove('hidden');
+        });
+
+        // 生成思维导图
+        document.getElementById('generate-mindmap').addEventListener('click', function () {
+            const courseTitle = document.getElementById('course-title').value.trim();
+            const courseDescription = document.getElementById('course-description').value.trim();
+            const teachingObjectives = document.getElementById('teaching-objectives').value.trim();
+
+            if (!courseTitle) {
+                showNotification('请填写课程标题', 'error');
+                return;
+            }
+
+            // 更新当前课程数据
+            currentCourseData.title = courseTitle;
+            currentCourseData.description = courseDescription;
+            currentCourseData.objectives = teachingObjectives;
+
+            // 显示加载状态
+            document.getElementById('mindmap-placeholder').style.display = 'none';
+            document.getElementById('mindmap-loading').style.display = 'flex';
+
+            // 使用JSON格式发送数据
+            fetch(API_ENDPOINTS.generateMindmap, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    course_title: courseTitle,
+                    course_description: courseDescription,
+                    teaching_objectives: teachingObjectives
+                })
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(err => {
+                                throw new Error(err.error || `请求失败: ${response.status}`)
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 隐藏加载状态
+                        document.getElementById('mindmap-loading').style.display = 'none';
+
+                        if (data.mindmap) {
+                            document.getElementById('mindmap-render').style.display = 'block';
+                            document.getElementById('mindmap-render').innerHTML = data.mindmap;
+                            currentCourseData.mindmap = data.mindmap;
+
+                            // 启用进入下一阶段的按钮
+                            document.getElementById('to-stage2').disabled = false;
+
+                            // 显示成功消息
+                            showNotification('思维导图生成成功!', 'success');
+                        } else {
+                            // 显示详细的错误信息
+                            const errorMsg = data.error || '生成思维导图失败，请重试';
+                            showNotification(errorMsg, 'error');
+                            document.getElementById('mindmap-placeholder').style.display = 'flex';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        showNotification('发生错误: ' + error.message, 'error');
+                        document.getElementById('mindmap-loading').style.display = 'none';
+                        document.getElementById('mindmap-placeholder').style.display = 'flex';
+                    });
+        });
+
+        // 导出思维导图
+        document.getElementById('export-mindmap').addEventListener('click', function () {
+            if (!currentCourseData.mindmap) {
+                showNotification('请先生成思维导图', 'error');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('mindmap', currentCourseData.mindmap);
+            formData.append('course_title', currentCourseData.title);
+
+            fetch(API_ENDPOINTS.exportMindmap, {
+                method: 'POST',
+                body: formData
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('导出失败');
+                        }
+                        return response.blob();
+                    })
+                    .then(blob => {
+                        // 创建下载链接
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `${currentCourseData.title.replace(/\s+/g, '_')}_思维导图.html`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(url);
+                        showNotification('思维导图导出成功!', 'success');
+                    })
+                    .catch(error => {
+                        console.error('导出错误:', error);
+                        showNotification('导出失败: ' + error.message, 'error');
+                    });
+        });
+
+        // 导出完整教案
+        document.getElementById('export-full-plan').addEventListener('click', function () {
+            if (!currentCourseData.mindmap || !currentCourseData.teachingFlow ||
+                    !currentCourseData.simulation || !currentCourseData.evaluation) {
+                showNotification('请完成所有阶段后再导出', 'error');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('course_title', currentCourseData.title);
+            formData.append('course_description', currentCourseData.description);
+            formData.append('teaching_objectives', currentCourseData.objectives);
+            formData.append('mindmap', currentCourseData.mindmap);
+            formData.append('teaching_flow', currentCourseData.teachingFlow);
+            formData.append('simulation', currentCourseData.simulation);
+            formData.append('evaluation', currentCourseData.evaluation);
+
+            fetch(API_ENDPOINTS.exportFullPlan, {
+                method: 'POST',
+                body: formData
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('导出失败');
+                        }
+                        return response.blob();
+                    })
+                    .then(blob => {
+                        // 创建下载链接
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `${currentCourseData.title.replace(/\s+/g, '_')}_完整教案.html`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(url);
+                        showNotification('完整教案导出成功!', 'success');
+                    })
+                    .catch(error => {
+                        console.error('导出错误:', error);
+                        showNotification('导出失败: ' + error.message, 'error');
+                    });
+        });
+
+        // 生成教学流程
+        document.getElementById('regenerate-flow').addEventListener('click', function () {
+            if (!currentCourseData.mindmap) {
+                showNotification('请先生成思维导图', 'error');
+                return;
+            }
+
+            // 显示加载状态
+            document.getElementById('flow-placeholder').style.display = 'none';
+            document.getElementById('teaching-flow-loading').style.display = 'flex';
+
+            fetch(API_ENDPOINTS.generateTeachingFlow, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    mindmap: currentCourseData.mindmap,
+                    course_title: currentCourseData.title
+                })
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(err => {
+                                throw new Error(err.error || '请求失败')
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 隐藏加载状态
+                        document.getElementById('teaching-flow-loading').style.display = 'none';
+
+                        if (data.teaching_flow) {
+                            document.getElementById('teaching-flow').style.display = 'block';
+                            document.getElementById('teaching-flow').innerHTML = data.teaching_flow;
+                            currentCourseData.teachingFlow = data.teaching_flow;
+                            // 启用进入下一阶段的按钮
+                            document.getElementById('to-stage3').disabled = false;
+                            showNotification('教学流程生成成功!', 'success');
+                        } else {
+                            const errorMsg = data.error || '生成教学流程失败，请重试';
+                            showNotification(errorMsg, 'error');
+                            document.getElementById('flow-placeholder').style.display = 'flex';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        showNotification('发生错误: ' + error.message, 'error');
+                        document.getElementById('teaching-flow-loading').style.display = 'none';
+                        document.getElementById('flow-placeholder').style.display = 'flex';
+                    });
+        });
+
+        // 生成问题模拟
+        document.getElementById('regenerate-simulation').addEventListener('click', function () {
+            if (!currentCourseData.teachingFlow) {
+                showNotification('请先生成教学流程', 'error');
+                return;
+            }
+
+            // 显示加载状态
+            document.getElementById('simulation-placeholder').style.display = 'none';
+            document.getElementById('simulation-loading').style.display = 'flex';
+
+            fetch(API_ENDPOINTS.generateProblemSimulation, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    teaching_flow: currentCourseData.teachingFlow,
+                    course_title: currentCourseData.title
+                })
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(err => {
+                                throw new Error(err.error || '请求失败')
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 隐藏加载状态
+                        document.getElementById('simulation-loading').style.display = 'none';
+
+                        if (data.simulation) {
+                            document.getElementById('simulation-results').style.display = 'block';
+                            document.getElementById('simulation-results').innerHTML = data.simulation;
+                            currentCourseData.simulation = data.simulation;
+
+                            // 启用进入下一阶段的按钮
+                            document.getElementById('to-stage4').disabled = false;
+                            showNotification('问题模拟生成成功!', 'success');
+                        } else {
+                            const errorMsg = data.error || '生成问题模拟失败，请重试';
+                            showNotification(errorMsg, 'error');
+                            document.getElementById('simulation-placeholder').style.display = 'flex';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        showNotification('发生错误: ' + error.message, 'error');
+                        document.getElementById('simulation-loading').style.display = 'none';
+                        document.getElementById('simulation-placeholder').style.display = 'flex';
+                    });
+        });
+
+        // 生成评价优化
+        document.getElementById('regenerate-evaluation').addEventListener('click', function () {
+            if (!currentCourseData.simulation) {
+                showNotification('请先生成问题模拟', 'error');
+                return;
+            }
+
+            // 显示加载状态
+            document.getElementById('evaluation-placeholder').style.display = 'none';
+            document.getElementById('evaluation-loading').style.display = 'flex';
+
+            fetch(API_ENDPOINTS.generateEvaluation, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    simulation: currentCourseData.simulation,
+                    course_title: currentCourseData.title
+                })
+            })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(err => {
+                                throw new Error(err.error || '请求失败')
+                            });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 隐藏加载状态
+                        document.getElementById('evaluation-loading').style.display = 'none';
+
+                        if (data.evaluation) {
+                            document.getElementById('evaluation-results').style.display = 'block';
+                            document.getElementById('evaluation-results').innerHTML = data.evaluation;
+                            currentCourseData.evaluation = data.evaluation;
+
+                            // 启用完成按钮
+                            document.getElementById('to-complete').disabled = false;
+
+                            showNotification('评价优化建议生成成功!', 'success');
+                        } else {
+                            const errorMsg = data.error || '生成评价失败，请重试';
+                            showNotification(errorMsg, 'error');
+                            document.getElementById('evaluation-placeholder').style.display = 'flex';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        showNotification('发生错误: ' + error.message, 'error');
+                        document.getElementById('evaluation-loading').style.display = 'none';
+                        document.getElementById('evaluation-placeholder').style.display = 'flex';
+                    });
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // 添加通知功能
+        function showNotification(message, type = 'info') {
+            // 移除现有通知
+            const existing = document.getElementById('app-notification');
+            if (existing) existing.remove();
+
+            const colors = {
+                info: 'bg-blue-500',
+                success: 'bg-green-500',
+                error: 'bg-red-500',
+                warning: 'bg-yellow-500'
+            };
+
+            const notification = document.createElement('div');
+            notification.id = 'app-notification';
+            notification.className = `fixed top-4 right-4 px-6 py-3 rounded-lg text-white shadow-lg z-50 ${colors[type] || colors.info} transition-all duration-300 transform translate-y-0 opacity-100`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'} mr-2"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // 5秒后自动消失
+            setTimeout(() => {
+                notification.classList.add('opacity-0');
+                setTimeout(() => notification.remove(), 300);
+            }, 5000);
+        }
+
+        // 移动设备菜单切换
+        document.querySelector('.sm\\:hidden').addEventListener('click', function () {
+            const menu = document.querySelector('.sm\\:ml-6');
+            menu.classList.toggle('hidden');
+        });
+    });
+</script>
+</body>
+</html>
